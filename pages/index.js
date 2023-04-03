@@ -4,9 +4,8 @@ import Logo from "../components/Logo";
 export default function Landing() {
   return (
     <>
-    <Logo />
-    <Video /* video="./inklabLanding.mp4" */ />
-      
+      <Video />
+      <Logo />
     </>
   );
 }
