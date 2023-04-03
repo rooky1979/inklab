@@ -1,6 +1,35 @@
-.heading {
-    font-size: x-large;
-    color: white;
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Anton&family=Antonio&display=swap');
+
+
+.textcontainer {
+    display: flexbox;
+    justify-content: flex-start;
+/*     align-items: center;
+ */    position: relative;
+     padding-top: 60px;
+     padding-left: 60px;
+     background-color: transparent;
+}
+.inklabheading {
+    font-family: 'Anton';
+    font-size: 65px;
+    color: azure;
+    background-color: transparent;
+}
+
+.kretnameheading {
+    font-family: 'Anton';
+    font-size: 50px;
+    color: azure;
+    background-color: transparent;
+}
+
+.experienceheading {
+    font-family: 'Antonio';
+    font-size: 30px;
+    color: whitesmoke;
     background-color: transparent;
 }
 
@@ -10,5 +39,4 @@
     height: 100%;
     position: fixed;
     z-index: -1; 
-    
 }
