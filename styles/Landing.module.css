@@ -15,11 +15,14 @@
 .socialicons {
     display: flexbox;
     justify-content: space-evenly;
-    position: relative;
+    align-items: flex-start;
     background-color: transparent;
-    padding: 5px;
-    
+    padding: 10px; 
 }
+.icon {
+    margin-right: 23px;
+}
+
 .inklabheading {
     font-family: 'Anton';
     font-size: 65px;
