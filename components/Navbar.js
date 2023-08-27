@@ -4,7 +4,7 @@ import navStyles from "@/styles/Navbar.module.css";
 const MobileMenu = () => {
   return (
     <div className={navStyles.mobilemenu}>
-      <a href="/Bio">
+      <a href="/bio">
             Bio
           </a>
           <a href="/portfolio">Portfolio</a>
