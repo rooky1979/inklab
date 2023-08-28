@@ -48,11 +48,11 @@ export const tiles = [
     ref: "/aftercare",
     src: "",
   },
-  /*     {
+      {
         id: "8",
-        title: "Unused",
-        desc: "",
-        ref: "",
+        title: "FAQs",
+        desc: "A small amount of the most questions I receive answered",
+        ref: "/faqs",
         src: "",
-    }, */
+    },
 ];
