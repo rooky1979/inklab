@@ -8,6 +8,7 @@ import {
 import Link from "next/link";
 import landingStyles from "@/styles/Landing.module.css";
 import buttonStyles from "@/styles/Buttons.module.css";
+import Carousel from "@/components/Carousel";
 
 const Logo = () => {
   return (
@@ -45,9 +46,12 @@ const Logo = () => {
           style={{ fontSize: 50, color: "gold" }}
         />
       </div>
+      <div className={landingStyles.carousel}>
       <Link href="./dashboard" className={buttonStyles.primarybtn}>
         Enter
       </Link>
+      <Carousel />
+      </div>
     </div>
   );
 };

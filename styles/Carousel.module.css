@@ -1,16 +1,59 @@
-.embla {
+.carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 238px;
+    width: 300px;
+    /* margin-top: 1rem; */
+  }
+  
+  .embla {
+    width: 100%;
     overflow: hidden;
   }
+  
   .embla__container {
     display: flex;
+    transition-property: transform;
   }
-  .embla__slide {
-/*     flex: 0 0 100%;
-    min-width: 0; */
-    border-radius: var(--border-radius);
-    background: rgb(244, 243, 233);
-    border: 1px solid rgb(84, 87, 89);
-    height: 200px; /* remove if not working */
-    width: 250px;
-    color: white;
+  
+  .slide {
+    flex: 0 0 100%;
+    padding: 0 10px;
+  }
+  
+  .slideContent {
+    background-color: #3d3d3d;
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+  .name {
+    font-size: medium;
+    color: azure;
+  }
+
+  .date {
+    padding: 0.1rem;
+    font-size: x-small;
+    color: azure;
+  }
+
+  .review {
+    /* padding: 0.1rem; */
+    font-size: small;
+    color: azure;
+  }
+
+  .rating {
+    height: 40px;
+  }
+
+  .google {
+    height: 20px;
+    margin-left: 5rem;
+  }
+
+  .googlecontainer {
+    width: 100%;
   }
