@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import landingStyles from "@/styles/Landing.module.css";
 
 const Video = () => {
@@ -8,7 +8,7 @@ const Video = () => {
         <source src="./inklabLanding.mp4" type="video/mp4" />
       </video>
     </>
-  )
-}
+  );
+};
 
-export default Video
+export default Video;

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const secretclub = () => {
+const mailing = () => {
   return (
     <div>
       <p>this is the secret club page</p>
@@ -8,4 +8,4 @@ const secretclub = () => {
   )
 }
 
-export default secretclub
+export default mailing

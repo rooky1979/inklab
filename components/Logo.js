@@ -26,24 +26,26 @@ const Logo = () => {
           />
         </Link>
         <Link href="https://www.facebook.com/skretztattoo">
-        <FontAwesomeIcon
-          className={landingStyles.icon}
-          icon={faFacebook}
-          style={{ fontSize: 50, color: "dodgerblue" }}
-        /></Link>
+          <FontAwesomeIcon
+            className={landingStyles.icon}
+            icon={faFacebook}
+            style={{ fontSize: 50, color: "dodgerblue" }}
+          />
+        </Link>
         <Link href="https://www.instagram.com/skretztattoo">
-        <FontAwesomeIcon
-          className={landingStyles.icon}
-          icon={faInstagram}
-          style={{ fontSize: 50, color: "orchid" }}
-        /></Link>
+          <FontAwesomeIcon
+            className={landingStyles.icon}
+            icon={faInstagram}
+            style={{ fontSize: 50, color: "orchid" }}
+          />
+        </Link>
         <FontAwesomeIcon
           className={landingStyles.icon}
           icon={faTiktok}
           style={{ fontSize: 50, color: "gold" }}
         />
       </div>
-      <Link href="./home" className={buttonStyles.primarybtn}>
+      <Link href="./dashboard" className={buttonStyles.primarybtn}>
         Enter
       </Link>
     </div>
