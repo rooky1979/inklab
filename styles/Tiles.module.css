@@ -25,6 +25,20 @@
     filter: drop-shadow(0px 8px 10px rgb(0, 0, 0));
   }
 
+  @media (min-width: 250px) and (max-width: 592px) {
+    .card {
+      padding: 1rem 1.2rem;
+      border-radius: var(--border-radius);
+      background: rgb(244, 243, 233);
+      border: 1px solid rgb(84, 87, 89);
+      transition: background 200ms, border 200ms;
+      height: 100px; /* remove if not working */
+      width: 150px;
+      border-image: fill;
+      filter: drop-shadow(0px 8px 10px rgb(0, 0, 0));
+    }
+  }
+
  @media (hover: hover) and (pointer: fine) {
   .card:hover {
     background: rgba(var(--card-rgb), 0.5);
@@ -47,14 +61,75 @@
     justify-content: center;
   }
 
+  @media (min-width: 250px) and (max-width: 1125px) {
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(15%, auto));
+      width: var(--max-width);
+      max-width: 100%;
+      gap: 25px 125px;
+      justify-items: center;
+      justify-content: center;
+    }
+  }
+  @media (min-width: 275px) and (max-width: 854px) {
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(15%, auto));
+      width: var(--max-width);
+      max-width: 100%;
+      gap: 25px 125px;
+      justify-items: center;
+      justify-content: center;
+    }
+  }
+  @media (min-width: 275px) and (max-width: 592px) {
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(15%, auto));
+      width: var(--max-width);
+      max-width: 100%;
+      gap: 25px 125px;
+      justify-items: center;
+      justify-content: center;
+    }
+  }
+  @media (min-width: 275px) and (max-width: 388px) {
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(15%, auto));
+      width: var(--max-width);
+      max-width: 100%;
+      gap: 25px 150px;
+      justify-items: center;
+      justify-content: center;
+    }
+  }
+
   .title {
     font-family: 'Anton';
     font-size: x-large;
     padding-bottom: 0.5rem;
   }
 
+  @media (min-width: 250px) and (max-width: 592px) {
+    .title {
+      font-family: 'Anton';
+      font-size: 1.0rem;
+      padding-bottom: 0.5rem;
+    }
+  }
+
   .description {
     font-family: 'Anton';
     font-weight: 400;
     font-size: medium;
+  }
+
+  @media (min-width: 250px) and (max-width: 592px) {
+    .description {
+      font-family: 'Anton';
+      font-size: 0.5rem;
+      font-weight: 400;
+    }
   }

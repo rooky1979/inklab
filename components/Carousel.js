@@ -2,6 +2,9 @@ import React, { useState, useEffect, useCallback, useRef } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import { reviews } from "../reviews";
 import carouselStyles from "../styles/Carousel.module.css";
+import RecursiveTimeout from "./recursiveTimeout";
+
+const AUTOPLAY_INTERVAL = 4000; // 4 seconds
 
 const Carousel = () => {
 
@@ -14,6 +17,18 @@ const Carousel = () => {
 
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [scrollSnaps, setScrollSnaps] = useState([]);
+
+  const autoplay = useCallback(() => {
+    if (!embla) return;
+
+    if (embla.canScrollNext()) {
+      embla.scrollNext();
+    } else {
+      embla.scrollTo(0);
+    }
+  }, [embla]);
+
+    const { play, stop } = RecursiveTimeout(autoplay, AUTOPLAY_INTERVAL);
 
   const scrollTo = useCallback(
     (index) => embla && embla.scrollTo(index),
@@ -31,6 +46,10 @@ const Carousel = () => {
     setScrollSnaps(embla.scrollSnapList());
     embla.on("select", onSelect);
   }, [embla, setScrollSnaps, onSelect]);
+
+  useEffect(() => {
+    play();
+  }, [play]);
 
   return (
     <div className={carouselStyles.carousel}>

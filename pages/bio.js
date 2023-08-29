@@ -1,11 +1,12 @@
-import React from 'react'
+import React from "react";
+import Navbar from "@/components/Navbar";
 
 const bio = () => {
   return (
     <div>
-      <p>This is the bio page</p>
+      <Navbar />
     </div>
-  )
-}
+  );
+};
 
-export default bio
+export default bio;

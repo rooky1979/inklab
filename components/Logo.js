@@ -46,7 +46,7 @@ const Logo = () => {
           style={{ fontSize: 50, color: "gold" }}
         />
       </div>
-      <div className={landingStyles.carousel}>
+      <div className={landingStyles.carouselcontainer}>
       <Link href="./dashboard" className={buttonStyles.primarybtn}>
         Enter
       </Link>

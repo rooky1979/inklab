@@ -52,7 +52,16 @@
     z-index: -1; 
 }
 
-.carousel {
+.carouselcontainer {
     display: inline-flex;
     justify-items: flex-start;
 }
+
+@media (min-width: 275px) and (max-width: 464px) {
+    .carouselcontainer {
+        display: block;
+        align-items: flex-start;
+        justify-content: center;
+        
+    }
+  }

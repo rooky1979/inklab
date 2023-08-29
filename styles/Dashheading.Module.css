@@ -22,12 +22,38 @@
     background-color: transparent;
 }
 
+@media (min-width: 275px) and (max-width: 844px) {
+    .heading {
+        font-family: 'Anton';
+        font-size: 40px;
+        color: azure;
+        background-color: transparent;
+    }
+  }
+@media (min-width: 275px) and (max-width: 440px) {
+    .heading {
+        font-family: 'Anton';
+        font-size: 30px;
+        color: azure;
+        background-color: transparent;
+    }
+  }
+
 .subheading {
     font-family: 'Anton';
     font-size: 40px;
     color: azure;
     background-color: transparent;
 }
+
+@media (min-width: 275px) and (max-width: 844px) {
+    .subheading {
+        font-family: 'Anton';
+        font-size: 22px;
+        color: azure;
+        background-color: transparent;
+    }
+  }
 
 .icon {
     margin-right: 23px;
