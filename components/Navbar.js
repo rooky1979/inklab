@@ -1,5 +1,13 @@
 import { useState } from "react";
 import navStyles from "@/styles/Navbar.module.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faYoutube,
+  faFacebook,
+  faInstagram,
+  faTiktok,
+} from "@fortawesome/free-brands-svg-icons";
+import Link from "next/link";
 
 const MobileMenu = () => {
   return (
@@ -24,10 +32,37 @@ const Navbar = () => {
   return (
     <>
       <div className={navStyles.topnav}>
+      <div className={navStyles.socialicons}>
         <a href="/dashboard">
-          <img src="/inkLogo.png" className={navStyles.logo} />
+          <p className={navStyles.logo}>The ink Lab by Steve Kretz</p>
         </a>
-
+          <Link href="https://www.youtube.com/@TheInkLab">
+            <FontAwesomeIcon
+              className={navStyles.icon}
+              icon={faYoutube}
+              style={{ fontSize: 25, color: "red" }}
+            />
+          </Link>
+          <Link href="https://www.facebook.com/skretztattoo">
+            <FontAwesomeIcon
+              className={navStyles.icon}
+              icon={faFacebook}
+              style={{ fontSize: 25, color: "dodgerblue" }}
+            />
+          </Link>
+          <Link href="https://www.instagram.com/skretztattoo">
+            <FontAwesomeIcon
+              className={navStyles.icon}
+              icon={faInstagram}
+              style={{ fontSize: 25, color: "orchid" }}
+            />
+          </Link>
+          <FontAwesomeIcon
+            className={navStyles.icon}
+            icon={faTiktok}
+            style={{ fontSize: 25, color: "gold" }}
+          />
+        </div>
         {/* Desktop Menu, which only appears on large screens */}
         <div className={navStyles.menu}>
           <a href="/bio">Bio</a>

@@ -45,11 +45,11 @@ const Logo = () => {
           icon={faTiktok}
           style={{ fontSize: 50, color: "gold" }}
         />
-      </div>
-      <div className={landingStyles.carouselcontainer}>
-      <Link href="./dashboard" className={buttonStyles.primarybtn}>
+        <Link href="./dashboard" className={buttonStyles.primarybtn}>
         Enter
       </Link>
+      </div>
+      <div className={landingStyles.carouselcontainer}>
       <Carousel />
       </div>
     </div>

@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Anton&family=Antonio&display=swap');
+
+.mainpage {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    padding-top: 1rem;
+    padding-bottom: 7rem;
+    min-height: 100vh;
+    background-color: aquamarine;
+    margin-top: 110px;
+}
+
+.header h1 {
+    font-family: 'Anton';
+    font-size: xx-large;
+}
