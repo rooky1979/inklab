@@ -1,10 +1,13 @@
-import React from 'react'
+import React from "react";
+import Navbar from "@/components/Navbar";
+import FaqsHeader from "@/components/FaqsHeader";
 
 const faqs = () => {
   return (
-    <div>
-      <p>Frequently asked questions</p>
-    </div>
+    <>
+      <Navbar />
+      <FaqsHeader />
+    </>
   )
 }
 

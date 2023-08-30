@@ -9,8 +9,8 @@
   display: flex;
   justify-content: space-between;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-/*   overflow: hidden;
-  position: fixed; */
+  overflow: hidden;
+  position: fixed;
   width: 100%;
 }
 
@@ -124,7 +124,7 @@
 }
 
 /* Media queries for responsiveness */
-@media screen and (min-width: 1079px) {
+@media screen and (min-width: 1171px) {
   .topnav {
     justify-content: flex-start;
   }

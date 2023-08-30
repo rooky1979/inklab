@@ -1,22 +1,362 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Allura&family=Anton&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Allura&family=Anton&family=Antonio&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Allura&family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Allura&family=Anton&family=Antonio&display=swap");
 
+/* BioHeader Component */
 .mainpage {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding-left: 6rem;
-    padding-right: 6rem;
-    padding-top: 1rem;
-    padding-bottom: 7rem;
-    min-height: 100vh;
-    background-color: aquamarine;
-    margin-top: 110px;
+   /*  background-color: transparent /* rgb(113, 118, 117) */;
+   background-image: url("/biobkg.jpg");
+   background-size: cover;
+   background-attachment: fixed;
+   border: none;
 }
-
-.header h1 {
-    font-family: 'Anton';
-    font-size: xx-large;
+.topcontainer {
+    display: flex;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem 3rem 0rem 3rem;
+    background-color: transparent;
+    margin-top: 5rem;
+    border: none;
 }
+.bottomcontainer {
+    display: flex;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 3rem 0rem 3rem;
+    background-color: transparent;
+    border: none;
+}
+.container {
+    display: flex;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    padding: 0.0rem 3rem 0rem 3rem;
+    background-color: transparent /* rgb(113, 118, 117) */;
+    border: none;
+}
+.middlecontainer {
+    display: flex;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    padding: 0.0rem 3rem 0rem 3rem;
+    background-color: transparent /* rgb(113, 118, 117) */;
+    border: none;
+}
+.leftcontainer {
+    flex: 1;
+    padding: 10px;
+}
+.rightcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 1rem;
+}
+.header {
+  font-family: "Anton";
+  font-size: 65px;
+  color: azure;
+  background-color: transparent;
+}
+.subheader1 {
+  font-family: "Anton";
+  font-size: 45px;
+  color: azure;
+  background-color: transparent;
+}
+.subheader2 {
+  font-family: "Anton";
+  font-size: 40px;
+  color: azure;
+  background-color: transparent;
+}
+/*images*/
+.kretpic {
+    height: 450px;
+    width: auto;
+    box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.16), 0 2px 15px 0 rgba(0, 0, 0, 0.12);
+    border: 1px solid rgb(0, 0, 0);
+}
+.graffitipic {
+    height: 200px;
+    width: auto;
+    box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.16), 0 2px 15px 0 rgba(0, 0, 0, 0.12);
+    border: 1px solid rgb(0, 0, 0);
+}
+.mokopic {
+    height: 150px;
+    width: auto;
+    box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.16), 0 2px 15px 0 rgba(0, 0, 0, 0.12);
+    border: 1px solid rgb(0, 0, 0);
+}
+.text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+    color: azure;
+    background-color: transparent;
+}
+/* Mobile views */
+@media (min-width: 275px) and (max-width: 1168px) {
+    .header {
+        font-family: "Anton";
+        font-size: 50px;
+        color: azure;
+        background-color: transparent;
+      }
+      .subheader1 {
+        font-family: "Anton";
+        font-size: 30px;
+        color: azure;
+        background-color: transparent;
+      }
+      .subheader2 {
+        font-family: "Anton";
+        font-size: 30px;
+        color: azure;
+        background-color: transparent;
+      }
+    .text {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 100;
+        font-size: 15px;
+        color: azure;
+        background-color: transparent;
+    }
+    .kretpic {
+        height: 250px;
+        width: auto;
+        box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.16), 0 2px 15px 0 rgba(0, 0, 0, 0.12);
+        border: 1px solid rgb(0, 0, 0);
+    }
+    .graffitipic {
+        height: 170px;
+        width: auto;
+        box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.16), 0 2px 15px 0 rgba(0, 0, 0, 0.12);
+        border: 1px solid rgb(0, 0, 0);
+    }
+    .mokopic {
+        height: 150px;
+        width: auto;
+        box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.16), 0 2px 15px 0 rgba(0, 0, 0, 0.12);
+        border: 1px solid rgb(0, 0, 0);
+    }
+  }
+@media (min-width: 275px) and (max-width: 807px) {
+    .header {
+        font-family: "Anton";
+        font-size: 50px;
+        color: azure;
+        background-color: transparent;
+      }
+      .subheader1 {
+        font-family: "Anton";
+        font-size: 30px;
+        color: azure;
+        background-color: transparent;
+      }
+      .subheader2 {
+        font-family: "Anton";
+        font-size: 30px;
+        color: azure;
+        background-color: transparent;
+      }
+    .text {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 100;
+        font-size: 12px;
+        color: azure;
+        background-color: transparent;
+    }
+    .kretpic {
+        height: 250px;
+        width: auto;
+        box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.16), 0 2px 15px 0 rgba(0, 0, 0, 0.12);
+        border: 1px solid rgb(0, 0, 0);
+    }
+    .graffitipic {
+        height: 150px;
+        width: auto;
+        box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.16), 0 2px 15px 0 rgba(0, 0, 0, 0.12);
+        border: 1px solid rgb(0, 0, 0);
+    }
+    .mokopic {
+        height: 150px;
+        width: auto;
+        box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.16), 0 2px 15px 0 rgba(0, 0, 0, 0.12);
+        border: 1px solid rgb(0, 0, 0);
+    }
+  }
+@media (min-width: 275px) and (max-width: 567px) {
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        justify-content: center;
+        align-items: center;
+        padding: 0rem 3rem 0rem 3rem;
+        background-color: transparent /* rgb(113, 118, 117) */;
+        border: none;
+    }
+    .bottomcontainer {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        justify-content: center;
+        align-items: center;
+        padding: 0rem 3rem 2rem 3rem;
+        background-color: transparent /* rgb(113, 118, 117) */;
+        border: none;
+    }
+    .leftcontainer {
+        flex: 1;
+        padding: 10px;
+    }
+    .rightcontainer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding-left: 1rem;
+    }
+    .header {
+        font-family: "Anton";
+        font-size: 35px;
+        color: azure;
+        background-color: transparent;
+      }
+      .subheader1 {
+        font-family: "Anton";
+        font-size: 25px;
+        color: azure;
+        background-color: transparent;
+      }
+      .subheader2 {
+        font-family: "Anton";
+        font-size: 30px;
+        color: azure;
+        background-color: transparent;
+      }
+    .text {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 100;
+        font-size: 13px;
+        color: azure;
+        background-color: transparent;
+    }
+    .kretpic {
+        height: 200px;
+        width: auto;
+        box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.16), 0 2px 15px 0 rgba(0, 0, 0, 0.12);
+        border: 1px solid rgb(0, 0, 0);
+    }
+    .graffitipic {
+        height: 150px;
+        width: auto;
+        box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.16), 0 2px 15px 0 rgba(0, 0, 0, 0.12);
+        border: 1px solid rgb(0, 0, 0);
+    }
+    .mokopic {
+        height: 150px;
+        width: auto;
+        box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.16), 0 2px 15px 0 rgba(0, 0, 0, 0.12);
+        border: 1px solid rgb(0, 0, 0);
+    }
+  }
+@media (min-width: 275px) and (max-width: 567px) {
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        justify-content: center;
+        align-items: center;
+        padding: 0rem 3rem 0rem 3rem;
+        background-color: transparent /* rgb(113, 118, 117) */;
+        border: none;
+    }
+    .middlecontainer {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        justify-content: center;
+        align-items: center;
+        padding: 1.5rem 3rem 0rem 3rem;
+        background-color: transparent /* rgb(113, 118, 117) */;
+        border: none;
+    }
+    .bottomcontainer {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        justify-content: center;
+        align-items: center;
+        padding: 0rem 3rem 2rem 3rem;
+        background-color: transparent /* rgb(113, 118, 117) */;
+        border: none;
+    }
+    .leftcontainer {
+        flex: 1;
+        padding: 10px;
+    }
+    .rightcontainer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding-left: 1rem;
+    }
+    .header {
+        font-family: "Anton";
+        font-size: 25px;
+        color: azure;
+        background-color: transparent;
+      }
+      .subheader1 {
+        font-family: "Anton";
+        font-size: 15px;
+        color: azure;
+        background-color: transparent;
+      }
+      .subheader2 {
+        font-family: "Anton";
+        font-size: 30px;
+        color: azure;
+        background-color: transparent;
+      }
+    .text {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 100;
+        font-size: 13px;
+        color: azure;
+        background-color: transparent;
+    }
+    .kretpic {
+        height: 150px;
+        width: auto;
+        box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.16), 0 2px 15px 0 rgba(0, 0, 0, 0.12);
+        border: 1px solid rgb(0, 0, 0);
+    }
+    .graffitipic {
+        height: 120px;
+        width: auto;
+        box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.16), 0 2px 15px 0 rgba(0, 0, 0, 0.12);
+        border: 1px solid rgb(0, 0, 0);
+    }
+    .mokopic {
+        height: 100px;
+        width: auto;
+        box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.16), 0 2px 15px 0 rgba(0, 0, 0, 0.12);
+        border: 1px solid rgb(0, 0, 0);
+    }
+  }

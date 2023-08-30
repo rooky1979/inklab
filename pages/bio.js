@@ -1,17 +1,15 @@
 import React from "react";
-import bioStyles from "../styles/Dashheading.module.css";
 import Navbar from "@/components/Navbar";
-
+import BioHeader from "@/components/BioHeader";
+import BioBody from "@/components/BioBody";
 
 const bio = () => {
   return (
-    <div>
-        <Navbar />
-      <div className={bioStyles.header}>
-        <h1>Steve Kretz - Realistic Tattoo Artist:</h1>
-        <h>My Story</h>
-      </div>
-    </div>
+    <>
+      <Navbar />
+      <BioHeader />
+      <BioBody />
+    </>
   );
 };
 

@@ -19,6 +19,7 @@ const MobileMenu = () => {
       <a href="/contact">Contact/Booking</a>
       <a href="/mailing">Secret Club</a>
       <a href="/aftercare">Aftercare</a>
+      <a href="/faqs">FAQs</a>
     </div>
   );
 };
@@ -72,6 +73,7 @@ const Navbar = () => {
           <a href="/contactbooking">Contact/Booking</a>
           <a href="/mailing">Secret Club</a>
           <a href="/aftercare">Aftercare</a>
+          <a href="/faqs">FAQs</a>
         </div>
 
         {/* This button only shows up on small screens. It is used to open the mobile menu */}

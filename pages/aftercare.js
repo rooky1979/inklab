@@ -1,10 +1,15 @@
 import React from 'react'
+import Navbar from "@/components/Navbar";
+import AftercareHeader from '@/components/AftercareHeader';
+import AftercareBody from '@/components/AftercareBody';
 
 const aftercare = () => {
   return (
-    <div>
-      <p>this is the aftercare page</p>
-    </div>
+    <>
+      <Navbar />
+      <AftercareHeader />
+      <AftercareBody />
+    </>
   )
 }
 
