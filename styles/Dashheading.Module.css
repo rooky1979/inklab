@@ -1,60 +1,60 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Allura&family=Anton&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Allura&family=Anton&family=Antonio&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Allura&family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Allura&family=Anton&family=Antonio&display=swap");
 
 .headingcontainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1rem;
 }
 
 .subheadingcontainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .heading {
-    font-family: 'Anton';
-    font-size: 65px;
-    color: azure;
-    background-color: transparent;
+  font-family: "Anton";
+  font-size: 65px;
+  color: azure;
+  background-color: transparent;
 }
 
 @media (min-width: 275px) and (max-width: 844px) {
-    .heading {
-        font-family: 'Anton';
-        font-size: 40px;
-        color: azure;
-        background-color: transparent;
-    }
-  }
-@media (min-width: 275px) and (max-width: 440px) {
-    .heading {
-        font-family: 'Anton';
-        font-size: 30px;
-        color: azure;
-        background-color: transparent;
-    }
-  }
-
-.subheading {
-    font-family: 'Anton';
+  .heading {
+    font-family: "Anton";
     font-size: 40px;
     color: azure;
     background-color: transparent;
+  }
+}
+@media (min-width: 275px) and (max-width: 440px) {
+  .heading {
+    font-family: "Anton";
+    font-size: 30px;
+    color: azure;
+    background-color: transparent;
+  }
+}
+
+.subheading {
+  font-family: "Anton";
+  font-size: 40px;
+  color: azure;
+  background-color: transparent;
 }
 
 @media (min-width: 275px) and (max-width: 844px) {
-    .subheading {
-        font-family: 'Anton';
-        font-size: 22px;
-        color: azure;
-        background-color: transparent;
-    }
+  .subheading {
+    font-family: "Anton";
+    font-size: 22px;
+    color: azure;
+    background-color: transparent;
   }
+}
 
 .icon {
-    margin-right: 23px;
+  margin-right: 23px;
 }

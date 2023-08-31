@@ -1,10 +1,13 @@
 import React from 'react'
+import Navbar from '@/components/Navbar'
+import Header from "@/components/Header";
 
 const mailing = () => {
   return (
-    <div>
-      <p>this is the secret club page</p>
-    </div>
+    <>
+      <Navbar />
+      <Header title="Secret Club" backgroundImage={"/mailing.jpg"}/>
+    </>
   )
 }
 
