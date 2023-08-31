@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Allura&family=Anton&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Allura&family=Anton&family=Antonio&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 /* BioHeader Component */
 .mainpage {
@@ -99,8 +100,8 @@
     border: 1px solid rgb(0, 0, 0);
 }
 .text {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 100;
+    font-family: "Roboto";
+    font-weight: 400;
     font-size: 20px;
     color: azure;
     background-color: transparent;
@@ -126,8 +127,8 @@
         background-color: transparent;
       }
     .text {
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: 100;
+        font-family: "Roboto";
+        font-weight: 400;
         font-size: 15px;
         color: azure;
         background-color: transparent;
@@ -171,8 +172,8 @@
         background-color: transparent;
       }
     .text {
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: 100;
+        font-family: "Roboto";
+        font-weight: 400;
         font-size: 12px;
         color: azure;
         background-color: transparent;
@@ -248,8 +249,8 @@
         background-color: transparent;
       }
     .text {
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: 100;
+        font-family: "Roboto";
+        font-weight: 400;
         font-size: 13px;
         color: azure;
         background-color: transparent;
@@ -335,8 +336,8 @@
         background-color: transparent;
       }
     .text {
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: 100;
+        font-family: "Roboto";
+        font-weight: 400;
         font-size: 13px;
         color: azure;
         background-color: transparent;

@@ -1,67 +1,113 @@
-import React from 'react'
-import aftercareStyles from "../styles/Aftercare.module.css";
+import React from "react";
+import bodyStyles from "../styles/AftercareFAQs.module.css";
 
-const AftercareBody = () => {
+const AftercareBody = ({backgroundImage}) => {
+  const mainpageStyle = {
+    backgroundImage: `url(${backgroundImage})`,
+  }
   return (
     <>
-      <div className={aftercareStyles.mainpage}>
-        <div className={aftercareStyles.container}>
-          <div className={aftercareStyles.rightcontainer}>
-            <p className={aftercareStyles.text}>
-              After establishing a successful design career in the U.K. over a
-              decade, I felt a calling for change. Despite enjoying design, an
-              unshakeable sense of something more led me to depart. Commencing
-              my design journey at 19, while peers travelled, I eventually left
-              my job and ventured to New York.
+      <div className={bodyStyles.mainpage} style={mainpageStyle}>
+        <div className={bodyStyles.bodycontainer}>
+          <div>
+            <p className={bodyStyles.boldtext}>
+              Follow these important steps to heal your Tattoo:
+            </p>
+            <p className={bodyStyles.text}>
+              Your tattoo will be bandaged with an adhesive dressing to keep
+              bacteria away from the open wound. Infections won’t happen through
+              the tattoo process and it is up to you to care for your tattoo
+              while it heals.
             </p>
             <br />
-            <p className={aftercareStyles.text}>
-              Infatuated with Hip Hop culture, I had a penchant for graffiti
-              from an early age. New York's rich tapestry of music, art, and
-              people rejuvenated this passion. A month-long stay inspired me
-              profoundly, guiding my path towards Auckland, New Zealand.
+            <p className={bodyStyles.boldtext}>
+              Adhesive Clear Bandage Instructions:
             </p>
-          </div>
-        </div>
-      </div>
-      <div className={aftercareStyles.mainpage}>
-        <div className={aftercareStyles.middlecontainer}>
-          <div className={aftercareStyles.rightcontainer}>
-            <p className={aftercareStyles.text}>
-            Auckland's vibrant tattoo culture captivated me, especially the prominence of Māori art. Despite unemployment, I immersed myself in creating art, gradually merging it with my newfound fascination to the cultural Polynesian tattoos and Moko (traditional Māori tattoo). A year later, in Queenstown, I met Melissa, my future wife who is Canadian.  After navigating a series of moves we both decided to make the move to her home of Canada, more importantly her hometown of Whistler.
+            <p className={bodyStyles.text}>
+              The adhesive bandage provides a water resistant seal over your
+              tattoo, providing the best conditions to start healing. I suggest
+              wearing the adhesive bandage for between 3-5 days. If you suffer
+              any irritation it can be removed sooner. The occasional ink bubble
+              is ok, but if ink and plasma is spreading over the tattoo, please
+              remove the bandage and wash it with soap and warm water. If a
+              second piece of bandage was provided it can be applied, or you can
+              move to the next step in the healing instructions.
             </p>
-          </div>
-        </div>
-      </div>
-      <div className={aftercareStyles.mainpage}>
-        <div className={aftercareStyles.container}>
-          <div className={aftercareStyles.rightcontainer}>
-            <p className={aftercareStyles.text}>
-            My yearning to learn tattooing persisted, but apprenticeships remained elusive. Undeterred, I embarked on a self-taught journey, tattooing fruits and myself while meticulously documenting my progress (I don’t recommend this method). By 2017, I helped Dave Petko of Black Ohm Tattoos on a “Trees for BC” fundraiser organized by Kelsey Bareham, owner of The Whistler Tattoo Company. After a successful fundraiser, Dave offered me a permanant place in his studio. Thus began my journey as a tattoo artist.
+            <br />
+            <p className={bodyStyles.boldtext}>
+              Conventional Bandage (Taped or wrapped to tattoo):
             </p>
-          </div>
-        </div>
-      </div>
-      <div className={aftercareStyles.mainpage}>
-        <div className={aftercareStyles.middlecontainer}>
-          <div className={aftercareStyles.rightcontainer}>
-            <p className={aftercareStyles.text}>
-            My style & techniques are constantly evolving. I still take notes on every tattoo and refine my process in every way to ensure I am creating the best tattoos, with the least possible damage to the skin. This is all part of my aim to provide the best possible tattoo experience. This also includes the way I approach conversations, emails, consultations and the whole tattoo design process. The serene backdrop of Whistler, coupled with the support of clients worldwide, brought my dream to fruition.
+            <p className={bodyStyles.text}>
+              If you are likely to react to the adhesive bandage, or you have a
+              large tattoo, I may cover with a conventional bandage. I normally
+              suggest keeping this on for the first night. In the morning wash
+              your tattoo gently with fragrance free soap and warm water, until
+              any slimy feeling has gone.
             </p>
-          </div>
-        </div>
-      </div>
-      <div className={aftercareStyles.mainpage}>
-        <div className={aftercareStyles.bottomcontainer}>
-          <div className={aftercareStyles.rightcontainer}>
-            <p className={aftercareStyles.text}>
-            Now, waking up surrounded by my family, I find solace in the mountains of Whistler. My days are dedicated to creating art for clients across the globe, merging design with tattoos. This journey embodies embracing change and realizing dreams through persistent pursuit, echoing the transformative power of artistic passion.
+            <br />
+            <p className={bodyStyles.boldtext}>
+              After removing your bandage:
+            </p>
+            <p className={bodyStyles.text}>
+              Once you remove the bandage you will need to wash your tattoo well
+              every few hours. Use mild soap (unscented is best) and warm water,
+              followed by a cold rinse, then pat it dry with a clean towel.
+            </p>
+            <br />
+            <p className={bodyStyles.text}>
+              After a day or two your skin will normally start to dry out. When
+              this happens you can apply a thin coat of moisturizer to the
+              tattoo. I recommend using an unscented moisturizer. Only use
+              enough to make it shine. Too much ointment can trap germs which
+              can potentially lead to infection.
+            </p>
+            <br />
+            <p className={bodyStyles.text}>
+              Avoid swimming, taking long showers or baths until your tattoo is
+              healed and the skin is no longer dry. Do not pick dry skin, as it
+              is helping your tattoo to heal correctly. Also try to keep it
+              protected from the sun, but don’t apply any sun screen until after
+              it has healed.
+            </p>
+            <br />
+            <p className={bodyStyles.boldtext}>Follow up appointments:</p>
+            <p className={bodyStyles.text}>
+              I take pride in making my Tattoos as perfect as possible. The way
+              the body heals is out of my hands, so whenever possible I like to
+              book a follow up appointment to check everything has healed
+              correctly. I charge a flat rate for these appointments based on
+              the size of your Tattoo.
+            </p>
+            <br />
+            <p className={bodyStyles.text}>
+              I would really appreciate if you could send me photos at 3-4
+              weeks, then we can book a follow up at around 6 weeks healed. A
+              short follow up can make all the difference and we can be sure
+              your Tattoo will look amazing for the years to come!
+            </p>
+            <br />
+            <p className={bodyStyles.text}>
+              If you have any questions, or concerns while healing please get in
+              touch!
+            </p>
+            <br />
+            <p className={bodyStyles.text}>
+              <strong>Email:</strong> stevek.tattoo@gmail.com or contact me
+              through the{" "}
+              <a className={bodyStyles.tabhover} href="/contactbooking">
+                Contact/Booking
+              </a>
+              tab.
+            </p>
+            <br />
+            <p className={bodyStyles.boldtext}>
+              Happy healing, enjoy your new Tattoo and I look forward to working
+              with you again in the future!!! Sk.
             </p>
           </div>
         </div>
       </div>
     </>
-  )
-}
-
-export default AftercareBody
+  );
+};
+export default AftercareBody;

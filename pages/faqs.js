@@ -1,12 +1,14 @@
 import React from "react";
 import Navbar from "@/components/Navbar";
-import FaqsHeader from "@/components/FaqsHeader";
+import Header from "@/components/Header";
+import FaqsBody from "@/components/FaqsBody";
 
 const faqs = () => {
   return (
     <>
       <Navbar />
-      <FaqsHeader />
+      <Header title="FAQs" backgroundImage={"/biobkg.jpg"}/>
+      <FaqsBody backgroundImage={"/biobkg.jpg"}/>
     </>
   )
 }

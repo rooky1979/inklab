@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Allura&family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Allura&family=Anton&family=Antonio&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+.mainpage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   background-size: cover;
+   background-attachment: fixed;
+   border: none;
+}
+.container {
+    display: flex;
+    height: 150px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 3rem 0rem 3rem;
+    background-color: transparent;
+    margin: 7rem 0rem 0rem 0rem;
+    border: none;
+}
+.bodycontainer {
+    display: flex;
+    width: 85%;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 3rem 2rem 3rem;
+    background-color: rgba(240, 255, 255, 0.811);
+    opacity: 100%;
+    margin: 0rem 0rem 2rem 0rem;
+    border: 1px solid rgb(214, 227, 227);
+    border-radius: var(--border-radius);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.7);
+}
+  .tabhover:hover,
+  .tabhover.activelink {
+    color: blue;
+  }
+.textcontainer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 0rem;
+}
+.header {
+  font-family: "Anton";
+  font-size: 65px;
+  color: azure;
+  background-color: transparent;
+}
+
+.text {
+  font-family: "Roboto";
+  font-size: 25px;
+  font-weight: 300;
+  color: rgb(0, 0, 0);
+  background-color: transparent;
+}
+.boldtext {
+  font-family: "Roboto";
+  font-size: 25px;
+  font-weight: 600;
+  color: rgb(42, 42, 42);
+  background-color: transparent;
+  padding-bottom: 0.4rem;
+}
+@media (min-width: 275px) and (max-width: 515px) {
+    .header {
+        font-size: 45px;
+      }
+      .text {
+        font-size: 20px;
+      }
+      .boldtext {
+        font-size: 20px;
+      }
+}
+@media (min-width: 275px) and (max-width: 385px) {
+    .header {
+        font-size: 40px;
+      }
+      .text {
+        font-size: 17px;
+      }
+      .boldtext {
+        font-size: 17px;
+      }
+}
