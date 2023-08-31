@@ -11,98 +11,60 @@ const FaqsBody = ({backgroundImage}) => {
         <div className={bodyStyles.bodycontainer}>
           <div>
             <p className={bodyStyles.boldtext}>
-              Follow these important steps to heal your Tattoo:
+            Where to get tattooed in Whistler?
             </p>
             <p className={bodyStyles.text}>
-              Your tattoo will be bandaged with an adhesive dressing to keep
-              bacteria away from the open wound. Infections won’t happen through
-              the tattoo process and it is up to you to care for your tattoo
-              while it heals.
+            There are many great artists in Whistler. Please check my portfolio first & if my style doesn’t fit your ideas, I’d be happy to suggest another artist.
             </p>
             <br />
             <p className={bodyStyles.boldtext}>
-              Adhesive Clear Bandage Instructions:
+            Where are you based?
             </p>
             <p className={bodyStyles.text}>
-              The adhesive bandage provides a water resistant seal over your
-              tattoo, providing the best conditions to start healing. I suggest
-              wearing the adhesive bandage for between 3-5 days. If you suffer
-              any irritation it can be removed sooner. The occasional ink bubble
-              is ok, but if ink and plasma is spreading over the tattoo, please
-              remove the bandage and wash it with soap and warm water. If a
-              second piece of bandage was provided it can be applied, or you can
-              move to the next step in the healing instructions.
+            I am based in Whistler, B.C. & operate from a private studio, alongside some other great artists. The location is open by appointment only, so provides a very relaxed atmosphere to get tattooed. We are located within Black Ohm Tattoos studio in Function Junction, just outside of the centre of Whistler. A great area to explore with walks, coffee shops & breweries.
+            </p>
+            <br />   
+            <p className={bodyStyles.text}>
+            The studio is not open to the public, so please <strong><a className={bodyStyles.tabhover} href="/contactbooking">
+                contact
+              </a></strong> me to discuss booking an appointment in advance.
+            </p>
+            <br />
+            
+            <p className={bodyStyles.boldtext}>
+            How long is your waitlist?
+            </p>
+            <p className={bodyStyles.text}>
+            It can be anywhere from a week to a month or more, depending on size of your tattoo & my schedule. If you’d like to get an accurate time frame contact me with your ideas!
             </p>
             <br />
             <p className={bodyStyles.boldtext}>
-              Conventional Bandage (Taped or wrapped to tattoo):
+            What styles’s of tattoo do you offer?
             </p>
             <p className={bodyStyles.text}>
-              If you are likely to react to the adhesive bandage, or you have a
-              large tattoo, I may cover with a conventional bandage. I normally
-              suggest keeping this on for the first night. In the morning wash
-              your tattoo gently with fragrance free soap and warm water, until
-              any slimy feeling has gone.
+            I really love a variety of styles & although I mainly tattoo realistic imagery, I often will tattoo with a bolder outlined style, or maybe even mix styles to create something unique.
             </p>
             <br />
             <p className={bodyStyles.boldtext}>
-              After removing your bandage:
-            </p>
+            Do you do small tattoos?            </p>
             <p className={bodyStyles.text}>
-              Once you remove the bandage you will need to wash your tattoo well
-              every few hours. Use mild soap (unscented is best) and warm water,
-              followed by a cold rinse, then pat it dry with a clean towel.
+            I have met some great people & been lucky enough to be their choice for their first tattoo. I’m always happy to start small & who knows, it may lead on to bigger things later!
+            </p>
+            <br />
+            <p className={bodyStyles.boldtext}>I’m interested in a sleeve tattoo, where do I start?</p>
+            <p className={bodyStyles.text}>
+            All I really need to get started is a rough concept, then I’m happy to book a free consultation to discuss the possibilities with you. If you like my ideas, then the fun starts & we create your artwork!
+            </p>
+            <br />
+            <p className={bodyStyles.boldtext}>How much does a sleeve tattoo cost?</p>
+            <p className={bodyStyles.text}>
+            A sleeve tattoo take multiple sessions & often takes around six days. This does depend on the artwork, so I can often work to a budget, or space out appointments to help spread the cost
             </p>
             <br />
             <p className={bodyStyles.text}>
-              After a day or two your skin will normally start to dry out. When
-              this happens you can apply a thin coat of moisturizer to the
-              tattoo. I recommend using an unscented moisturizer. Only use
-              enough to make it shine. Too much ointment can trap germs which
-              can potentially lead to infection.
-            </p>
-            <br />
-            <p className={bodyStyles.text}>
-              Avoid swimming, taking long showers or baths until your tattoo is
-              healed and the skin is no longer dry. Do not pick dry skin, as it
-              is helping your tattoo to heal correctly. Also try to keep it
-              protected from the sun, but don’t apply any sun screen until after
-              it has healed.
-            </p>
-            <br />
-            <p className={bodyStyles.boldtext}>Follow up appointments:</p>
-            <p className={bodyStyles.text}>
-              I take pride in making my Tattoos as perfect as possible. The way
-              the body heals is out of my hands, so whenever possible I like to
-              book a follow up appointment to check everything has healed
-              correctly. I charge a flat rate for these appointments based on
-              the size of your Tattoo.
-            </p>
-            <br />
-            <p className={bodyStyles.text}>
-              I would really appreciate if you could send me photos at 3-4
-              weeks, then we can book a follow up at around 6 weeks healed. A
-              short follow up can make all the difference and we can be sure
-              your Tattoo will look amazing for the years to come!
-            </p>
-            <br />
-            <p className={bodyStyles.text}>
-              If you have any questions, or concerns while healing please get in
-              touch!
-            </p>
-            <br />
-            <p className={bodyStyles.text}>
-              <strong>Email:</strong> stevek.tattoo@gmail.com or contact me
-              through the{" "}
-              <a className={bodyStyles.tabhover} href="/contactbooking">
+            If you like what you have heard so far & would like to talk about an idea, please fill in a quick               <strong><a className={bodyStyles.tabhover} href="/contactbooking">
                 Contact/Booking
-              </a>
-              tab.
-            </p>
-            <br />
-            <p className={bodyStyles.boldtext}>
-              Happy healing, enjoy your new Tattoo and I look forward to working
-              with you again in the future!!! Sk.
+              </a></strong> form & I’ll be in touch soon!
             </p>
           </div>
         </div>

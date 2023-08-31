@@ -7,8 +7,8 @@ const faqs = () => {
   return (
     <>
       <Navbar />
-      <Header title="FAQs" backgroundImage={"/biobkg.jpg"}/>
-      <FaqsBody backgroundImage={"/biobkg.jpg"}/>
+      <Header title="FAQs" backgroundImage={"/parlour.jpg"}/>
+      <FaqsBody backgroundImage={"/parlour.jpg"}/>
     </>
   )
 }

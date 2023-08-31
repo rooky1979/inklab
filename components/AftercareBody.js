@@ -1,10 +1,10 @@
 import React from "react";
 import bodyStyles from "../styles/AftercareFAQs.module.css";
 
-const AftercareBody = ({backgroundImage}) => {
+const AftercareBody = ({ backgroundImage }) => {
   const mainpageStyle = {
     backgroundImage: `url(${backgroundImage})`,
-  }
+  };
   return (
     <>
       <div className={bodyStyles.mainpage} style={mainpageStyle}>
@@ -45,9 +45,7 @@ const AftercareBody = ({backgroundImage}) => {
               any slimy feeling has gone.
             </p>
             <br />
-            <p className={bodyStyles.boldtext}>
-              After removing your bandage:
-            </p>
+            <p className={bodyStyles.boldtext}>After removing your bandage:</p>
             <p className={bodyStyles.text}>
               Once you remove the bandage you will need to wash your tattoo well
               every few hours. Use mild soap (unscented is best) and warm water,
@@ -93,10 +91,8 @@ const AftercareBody = ({backgroundImage}) => {
             <br />
             <p className={bodyStyles.text}>
               <strong>Email:</strong> stevek.tattoo@gmail.com or contact me
-              through the{" "}
-              <a className={bodyStyles.tabhover} href="/contactbooking">
-                Contact/Booking
-              </a>
+              through the 
+              <strong><a className={bodyStyles.tabhover} href="/contactbooking"> Contact/Booking </a></strong> 
               tab.
             </p>
             <br />
