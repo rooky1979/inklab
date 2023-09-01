@@ -109,6 +109,7 @@
   .title {
     font-family: 'Anton';
     font-size: x-large;
+    color: black;
     padding-bottom: 0.5rem;
   }
 
@@ -124,6 +125,7 @@
     font-family: 'Anton';
     font-weight: 400;
     font-size: medium;
+    color: black;
   }
 
   @media (min-width: 250px) and (max-width: 592px) {
