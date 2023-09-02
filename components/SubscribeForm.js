@@ -35,32 +35,36 @@ const SubscribeForm = ({ backgroundImage }) => {
   return (
     <div className={formStyles.mainpage} style={mainpageStyle}>
       <div className={formStyles.bodycontainer}>
-        <form onSubmit={handleSubmit(onSubmit)}>
-          <div className={formStyles.leftcontainer}>
-            <label>First Name:</label>
-            <br />
-            <label>Last Name:</label>
-            <br />
-            <label>Email:</label>
-          </div>
-          <div className={formStyles.rightcontainer}>
-            <input
-              className={formStyles.input}
-              type="text"
-              {...register("lastName")}
-            />
+        <form
+          className={formStyles.formcontainer}
+          onSubmit={handleSubmit(onSubmit)}
+        >
+          <div className={formStyles.formfield}>
+            <label className={formStyles.label}>First Name:</label>
             <input
               className={formStyles.input}
               type="text"
               {...register("firstName")}
             />
+          </div>
+          <br />
+          <div className={formStyles.formfield}>
+            <label className={formStyles.label}>Last Name:</label>
+            <input
+              className={formStyles.input}
+              type="text"
+              {...register("lastName")}
+            />
+          </div>
+          <br />
+          <div className={formStyles.formfield}>
+            <label className={formStyles.label}>Email:</label>
             <input
               className={formStyles.input}
               type="email"
               {...register("email")}
             />
           </div>
-          <br />
           <button className={buttonStyles.primarybtn} type="submit">
             Subscribe
           </button>
