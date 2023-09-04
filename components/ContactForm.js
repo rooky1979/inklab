@@ -1,10 +1,15 @@
 // components/ContactForm.js
 
 import React, { useState } from 'react';
-import contactStyles from './Contact.module.css';
+import contactStyles from "../styles/Contact.module.css";
 import axios from 'axios'; // Import Axios
 
-function ContactForm() {
+const ContactForm = ({ backgroundImage }) => {
+
+  const mainpageStyle = {
+    backgroundImage: `url(${backgroundImage})`,
+  };
+
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
@@ -37,7 +42,9 @@ function ContactForm() {
   };
 
   return (
-    <form className={contactStyles.contactForm} onSubmit={handleSubmit}>
+    <div className={contactStyles.mainpage} style={mainpageStyle}>
+        <div className={contactStyles.bodycontainer}>
+    <form  onSubmit={handleSubmit}>
       <input
         type="text"
         name="name"
@@ -71,6 +78,8 @@ function ContactForm() {
       />
       <button type="submit">Submit</button>
     </form>
+    </div>
+    </div>
   );
 }
 
