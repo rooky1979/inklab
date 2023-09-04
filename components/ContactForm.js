@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import contactStyles from "../styles/Contact.module.css";
 import buttonStyles from "../styles/Buttons.module.css";
-import axios from "axios";
 
 const ContactForm = ({ backgroundImage }) => {
+
+  const nodemailer = require('nodemailer');
+
   const mainpageStyle = {
     backgroundImage: `url(${backgroundImage})`,
   };
@@ -22,21 +24,35 @@ const ContactForm = ({ backgroundImage }) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    try {
-      // Make a POST request to your API route
-      const response = await axios.post("/api/contact", formData);
+     // Create a transporter using Elastic Email's SMTP server and your credentials
+  const transporter = nodemailer.createTransport({
+    host: 'smtp.elasticemail.com', // Elastic Email SMTP server
+    port: 2525, // Elastic Email SMTP port
+    auth: {
+      user: process.env.REACT_APP_ELASTIC_USERNAME, // Your Elastic Email username (often your email address)
+      pass: process.env.REACT_APP_ELASTIC_PASSWORD, // Your SMTP password or API key
+    },
+  });
 
-      if (response.data.success) {
-        // Handle success (e.g., show a success message to the user)
-        console.log("Email sent successfully");
-      } else {
-        // Handle error (e.g., show an error message to the user)
-        console.error("Email could not be sent");
-      }
-    } catch (error) {
-      // Handle network or other errors
-      console.error("An error occurred:", error);
-    }
+  // Compose your email
+  const mailOptions = {
+    from: formData.email, // Your sender email address
+    to: 'mrook1979@hotmail.com', // Recipient's email address
+    subject: 'NEW TATTOO ENQUIRY',
+    text: 'Hello, this is a test email sent through Elastic Email SMTP!',
+  };
+
+  try {
+    // Send the email
+    const info = await transporter.sendMail(mailOptions);
+    console.log('Email sent:', info.response);
+    
+    // Handle success (e.g., show a success message to the user)
+    console.log('Email sent successfully');
+  } catch (error) {
+    // Handle errors (e.g., show an error message to the user)
+    console.error('Error sending email:', error);
+  }
   };
 
   return (
