@@ -7,10 +7,9 @@ const contactbooking = () => {
   return (
     <>
       <Navbar />
-      <Header title="Secret Club" backgroundImage={"/mailing.jpg"}/>
+      <Header title="Contact/Booking" backgroundImage={"/mailing.jpg"}/>
       <ContactForm backgroundImage={"/mailing.jpg"}/>
     </>
   )
 }
-
 export default contactbooking

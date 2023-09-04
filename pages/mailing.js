@@ -7,8 +7,8 @@ const mailing = () => {
   return (
     <>
       <Navbar />
-      <Header title="Secret Club" backgroundImage={"/mailing.jpg"}/>
-      <SubscribeForm backgroundImage={"/mailing.jpg"}/>
+      <Header title="Secret Club" backgroundImage={"/secret.jpg"}/>
+      <SubscribeForm backgroundImage={"/secret.jpg"}/>
     </>
   )
 }

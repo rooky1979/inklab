@@ -16,7 +16,7 @@ const MobileMenu = () => {
       <a href="/portfolio">Portfolio</a>
       <a href="/available">Available Art</a>
       <a href="/blog">Blog</a>
-      <a href="/contact">Contact/Booking</a>
+      <a href="/contactbooking">Contact/Booking</a>
       <a href="/mailing">Secret Club</a>
       <a href="/aftercare">Aftercare</a>
       <a href="/faqs">FAQs</a>

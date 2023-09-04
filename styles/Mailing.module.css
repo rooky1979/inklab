@@ -80,6 +80,7 @@
 @media (min-width: 275px) and (max-width: 541px) {
   .bodycontainer {
     width: 75%;
+    padding: 1rem 1rem 1rem 1rem;
   }
   .input {
     width: 100%;
