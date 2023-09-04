@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Allura&family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Allura&family=Anton&family=Antonio&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+.contactForm {
+    /* Add your form styles here */
+    /* Example styles: */
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
