@@ -1,0 +1,15 @@
+todo
+
+add in to the contact/booking page about filling out the contact form and booking info
+
+put rates in the FAQs
+
+Create decent subscribe/contact sending success/fails
+
+change the FAQS background
+
+portfolio/available art. use a carousel for the pics
+
+blog
+
+page animations
