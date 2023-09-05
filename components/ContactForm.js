@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import contactStyles from "../styles/Contact.module.css";
 import buttonStyles from "../styles/Buttons.module.css";
+import axios from "axios";
 
 const ContactForm = ({ backgroundImage }) => {
 
