@@ -30,6 +30,38 @@ const FaqsBody = ({backgroundImage}) => {
               </a></strong> me to discuss booking an appointment in advance.
             </p>
             <br />
+            <p className={bodyStyles.boldtext}>
+            Where are your rates?
+            </p>
+            <p className={bodyStyles.text}>
+My current rates are:
+            </p> 
+            <br />
+            <p className={bodyStyles.text}>
+            Consultations are free
+            </p>
+            <p className={bodyStyles.text}>
+            Hourly rate – $200/hour
+            </p>
+            <p className={bodyStyles.text}>
+            One hour minimum charge
+            </p>
+            <p className={bodyStyles.text}>
+            Day Rate – 6 hour appointment (11 – 5pm) – $1000
+            </p>
+            <p className={bodyStyles.text}>
+            Day Rate – 8 hour appointment (11am – 7pm) – $1200
+            </p>
+            <p className={bodyStyles.text}>
+            Pre-drawn Artwork – Contact to discuss prices
+            </p>
+            <br />   
+            <p className={bodyStyles.text}>
+            The studio is not open to the public, so please <strong><a className={bodyStyles.tabhover} href="/contactbooking">
+                contact
+              </a></strong> me to discuss booking an appointment in advance.
+            </p>
+            <br />
             
             <p className={bodyStyles.boldtext}>
             How long is your waitlist?
