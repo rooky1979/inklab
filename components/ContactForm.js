@@ -33,7 +33,9 @@ const ContactForm = ({ backgroundImage }) => {
         email: "",
         tattooEnquiry: "",
       });
+      alert("Email sent successfully!");
     } catch (error) {
+      alert("An error occurred while sending the email. Please try again later.");
       console.error("Error sending email:", error);
     }
   };
@@ -48,8 +50,7 @@ const ContactForm = ({ backgroundImage }) => {
           </div>
           <div className={contactStyles.text}>
             <p>
-              Hey, I’m Steve, thanks for coming to learn more about booking with
-              me! My tattooing covers a variety of styles, but I consider myself
+              My tattooing covers a variety of styles, but I consider myself
               a specialist in realistic tattooing, in both black & grey &
               colour. I do also take a variety of projects & I will always aim
               to help my clients with all of their tattoo requests.
