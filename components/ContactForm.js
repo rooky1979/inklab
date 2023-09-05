@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import contactStyles from "../styles/Contact.module.css";
 import buttonStyles from "../styles/Buttons.module.css";
-import axios from "axios"; // Import Axios
 
 const ContactForm = ({ backgroundImage }) => {
-  /*  const nodemailer = require('nodemailer-browser'); */
+
+  const nodemailer = require('nodemailer');
 
   const mainpageStyle = {
     backgroundImage: `url(${backgroundImage})`,
