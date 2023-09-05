@@ -4,8 +4,6 @@ import buttonStyles from "../styles/Buttons.module.css";
 
 const ContactForm = ({ backgroundImage }) => {
 
-  const nodemailer = require('nodemailer');
-
   const mainpageStyle = {
     backgroundImage: `url(${backgroundImage})`,
   };
