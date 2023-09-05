@@ -78,6 +78,7 @@ const SubscribeForm = ({ backgroundImage }) => {
               <input
                 className={formStyles.input}
                 type="text"
+                required
                 {...register("firstName")}
               />
             </div>
@@ -87,6 +88,7 @@ const SubscribeForm = ({ backgroundImage }) => {
               <input
                 className={formStyles.input}
                 type="text"
+                required
                 {...register("lastName")}
               />
             </div>
@@ -96,6 +98,7 @@ const SubscribeForm = ({ backgroundImage }) => {
               <input
                 className={formStyles.input}
                 type="email"
+                required
                 {...register("email")}
               />
             </div>
