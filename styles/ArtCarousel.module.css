@@ -25,13 +25,16 @@
   height: auto;
   object-fit: cover;
   border-radius: 10px;
+/*   z-index: -1; */
 }
 .carousel {
   display: flex;
   justify-content: center;
   align-items: center;
   height: auto;
-  width: 750px;
+  /* width: 750px; */
+  max-width: 750px; /* Limit the maximum width for larger screens */
+  margin: 0 auto; /* Center the carousel horizontally */
 }
 .embla {
   width: 100%;
@@ -58,15 +61,15 @@
 }
 .yellowdot {
   background-color: #0156ff; 
-  width: 1rem; 
-  height: 1rem;
+  width: 1.5rem; 
+  height: 1.5rem;
   border-radius: 50%;
   margin-right: 2rem;
 }
 .graydot {
-  background-color: rgba(0, 0, 0, 0.5);
-  width: 1rem; 
-  height: 1rem; 
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  width: 1.5rem; 
+  height: 1.5rem; 
   border-radius: 50%;
   margin-right: 2rem;
 }
@@ -106,4 +109,25 @@
 }
 .arrowRight:hover {
   background-color: #0156ff;
+}
+/* Media query for smaller screens (adjust the breakpoint as needed) */
+@media (max-width: 865px) {
+  .bodycontainer {
+    padding: 0.5rem 1rem; /* Adjust padding for smaller screens */
+    width: 85%;
+  }
+
+  .carousel {
+    max-width: 100%; /* Allow the carousel to take up the full width on smaller screens */
+  }
+}
+@media (max-width: 410px) {
+  .bodycontainer {
+    padding: 0.5rem 1rem; /* Adjust padding for smaller screens */
+    width: 95%;
+  }
+
+  .carousel {
+    max-width: 100%; /* Allow the carousel to take up the full width on smaller screens */
+  }
 }

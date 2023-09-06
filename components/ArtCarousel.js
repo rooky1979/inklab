@@ -69,10 +69,12 @@ const ArtCarousel = ({ images, backgroundImage }) => {
     <div className={artCarouselStyles.mainpage} style={mainpageStyle}>
       <div className={artCarouselStyles.bodycontainer}>
         {/* Left Arrow */}
+        <div className={artCarouselStyles.carousel}>
+{/*         <div>
         <button className={artCarouselStyles.arrowLeft} onClick={scrollPrev}>
           &lt;
         </button>
-        <div className={artCarouselStyles.carousel}>
+        </div> */}
           <div className={artCarouselStyles.embla} ref={emblaRef}>
             <div className={artCarouselStyles.embla__container}>
               {images.map((image) => (
@@ -99,9 +101,11 @@ const ArtCarousel = ({ images, backgroundImage }) => {
           </div>
         </div>
         {/* Right Arrow */}
+        {/* <div>
         <button className={artCarouselStyles.arrowRight} onClick={scrollNext}>
           &gt;
         </button>
+        </div> */}
       </div>
     </div>
   );
