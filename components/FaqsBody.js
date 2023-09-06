@@ -61,8 +61,16 @@ My current rates are:
                 contact
               </a></strong> me to discuss booking an appointment in advance.
             </p>
+            <br />          
+            <p className={bodyStyles.boldtext}>
+            How do I book and what's the process?
+            </p>
+            <p className={bodyStyles.text}>
+            If you click on the <strong><a className={bodyStyles.tabhover} href="/contactbooking">
+                Contact/Booking
+              </a></strong> tab, there you will find everything you need to know to get started including my booking terms and conditions. General enquiries are also welcomed.
+            </p>
             <br />
-            
             <p className={bodyStyles.boldtext}>
             How long is your waitlist?
             </p>

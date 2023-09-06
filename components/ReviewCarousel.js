@@ -6,7 +6,7 @@ import RecursiveTimeout from "./recursiveTimeout";
 
 const AUTOPLAY_INTERVAL = 4000; // 4 seconds
 
-const Carousel = () => {
+const ReviewCarousel = () => {
 
   const [emblaRef, embla] = useEmblaCarousel({
     align: "start",
@@ -73,4 +73,4 @@ const Carousel = () => {
   );
 };
 
-export default Carousel;
+export default ReviewCarousel;

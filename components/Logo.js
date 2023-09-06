@@ -8,7 +8,7 @@ import {
 import Link from "next/link";
 import landingStyles from "@/styles/Landing.module.css";
 import buttonStyles from "@/styles/Buttons.module.css";
-import Carousel from "@/components/Carousel";
+import ReviewCarousel from "@/components/ReviewCarousel";
 
 const Logo = () => {
   return (
@@ -50,7 +50,7 @@ const Logo = () => {
       </Link>
       </div>
       <div className={landingStyles.carouselcontainer}>
-      <Carousel />
+      <ReviewCarousel />
       </div>
     </div>
   );
