@@ -1,5 +1,6 @@
 .mainpage {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-size: cover;
@@ -8,7 +9,8 @@
 }
 .bodycontainer {
   display: flex;
-  width: auto;
+  width: 50%;
+  height: auto;
   justify-content: center;
   align-items: center;
   padding: 0.5rem 2.5rem 0.5rem 2.5rem;
@@ -23,7 +25,7 @@
 .image {
   width: 100%;
   height: auto;
-  object-fit: cover;
+  /* object-fit: contain; */
   border-radius: 10px;
 /*   z-index: -1; */
 }
@@ -35,6 +37,7 @@
   /* width: 750px; */
   max-width: 750px; /* Limit the maximum width for larger screens */
   margin: 0 auto; /* Center the carousel horizontally */
+/*   background-color: black; */
 }
 .embla {
   width: 100%;
@@ -58,6 +61,7 @@
   justify-content: center;
   margin-top: 1.25rem; 
   margin-right: 0.5rem;
+/*   background-color: blue; */
 }
 .yellowdot {
   background-color: #0156ff; 
@@ -67,16 +71,16 @@
   margin-right: 2rem;
 }
 .graydot {
-  /* background-color: rgba(0, 0, 0, 0.5); */
+  background-color: rgb(228, 228, 228);
   width: 1.5rem; 
   height: 1.5rem; 
   border-radius: 50%;
   margin-right: 2rem;
 }
 .arrowLeft {
-  position: absolute;
-  left: 23%;
-  top: 75%; 
+/*   position: absolute; */
+/*   left: 23%;
+  top: 75%;  */
   transform: translateY(-50%); 
   background-color: rgba(0, 0, 0, 0.5); 
   border-radius: 10px;
@@ -87,15 +91,15 @@
   cursor: pointer;
   z-index: 1; 
   transition: background-color 0.3s ease; 
+  margin-right: 2rem;
 }
-
 .arrowLeft:hover {
   background-color: #0156ff; 
 }
 .arrowRight {
-  position: absolute;
-  right: 23%; 
-  top: 75%;
+/*   position: absolute; */
+/*   right: 23%; 
+  top: 75%; */
   transform: translateY(-50%); 
   background-color: rgba(0, 0, 0, 0.5); 
   border-radius: 10px;
@@ -106,28 +110,62 @@
   cursor: pointer;
   z-index: 1; 
   transition: background-color 0.3s ease; 
+  margin-left: 2rem;
 }
 .arrowRight:hover {
   background-color: #0156ff;
 }
+.textcontainer {
+  display: flex;
+  width: 85%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; /* Stack text vertically */
+  padding: 1rem 2.5rem 1rem 2.5rem;
+  background-color: rgba(240, 255, 255, 0.811);
+  opacity: 100%;
+  margin: 0rem 0rem 1rem 0rem;
+  border: 3px solid rgb(41, 92, 92);
+  border-radius: var(--border-radius);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.7);
+  color: black;  /*     display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 0rem;
+    flex: 1; */
+}
+.text {
+  font-family: "Roboto";
+  font-size: 25px;
+  font-weight: 300;
+  color: rgb(0, 0, 0);
+  background-color: transparent;
+}
 /* Media query for smaller screens (adjust the breakpoint as needed) */
-@media (max-width: 865px) {
+@media (max-width: 1200px) {
   .bodycontainer {
     padding: 0.5rem 1rem; /* Adjust padding for smaller screens */
     width: 85%;
   }
-
   .carousel {
     max-width: 100%; /* Allow the carousel to take up the full width on smaller screens */
+  }
+  .text {
+    font-size: 20px;
   }
 }
-@media (max-width: 410px) {
+@media (max-width: 500px) {
   .bodycontainer {
     padding: 0.5rem 1rem; /* Adjust padding for smaller screens */
-    width: 95%;
+    width: 90%;
   }
-
   .carousel {
     max-width: 100%; /* Allow the carousel to take up the full width on smaller screens */
+  }
+  .text {
+    font-size: 15px;
+  }
+  .textcontainer {
+    width: 90%
   }
 }

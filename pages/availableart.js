@@ -2,6 +2,7 @@ import React from "react";
 import Header from "@/components/Header";
 import Navbar from "@/components/Navbar";
 import ArtCarousel from "@/components/ArtCarousel";
+import { availableimgs, availabletext } from "../availableimgs";
 
 const images = [
   "https://images.pexels.com/photos/169647/pexels-photo-169647.jpeg?auto=compress&cs=tinysrgb&w=600",
@@ -17,7 +18,7 @@ const availableart = () => {
     <>
       <Navbar />
       <Header title="Available Art" backgroundImage={"/steve4.webp"} />
-      <ArtCarousel images={images} backgroundImage={"/steve4.webp"} />
+      <ArtCarousel text={availabletext} images={availableimgs} backgroundImage={"/steve4.webp"} />
     </>
   );
 };

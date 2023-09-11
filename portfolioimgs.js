@@ -1,0 +1,48 @@
+export const portfolioimgs = [
+  'port1.webp',
+  'port2.webp',
+  'port3.webp',
+  'port4.webp',
+  'port5.webp',
+  'port6.webp',
+/*   'port7.webp',
+  'port8.webp', */
+  'port9.webp',
+  'port10.webp',
+  'port11.webp',
+  'port12.webp',
+  /* 'port13.webp',
+  'port14.webp', */
+  'port15.webp',
+  'port16.webp',
+  'port17.webp',
+  'port18.webp',
+  /* 'port19.webp',
+  'port20.webp', */
+  'port21.webp',
+  'port22.webp',
+  /* 'port23.webp',
+  'port24.webp', */
+  'port25.webp',
+  'port26.webp',
+  'port27.webp',
+  'port28.webp',
+  'port29.webp',
+  'port30.webp',
+  'port31.webp',
+  'port32.webp',
+  'port33.webp',
+  'port34.webp',
+  'port35.webp',
+  'port36.webp',
+  'port37.webp',
+  'port38.webp',
+  'port39.webp',
+  'port40.webp',
+  'port41.webp',
+  'port42.webp',
+  'port43.webp',
+  'port44.webp',
+];
+
+export const portfoliotext = "This is a brief portfolio of my work. I love different styles of tattooing and I am open to working on a range of subject matter for my tattoo artwork. I normally work mainly in a realistic style, especially if tattooing animals, or portraits. Then I often like to include some bolder elements, which is why I consider myself more of a mixed style tattoo artist. I also like to switch styles occasionally, so if you have an idea in a different style, get in touch and we can discuss possibilities.";

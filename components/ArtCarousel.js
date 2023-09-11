@@ -3,9 +3,9 @@ import useEmblaCarousel from "embla-carousel-react";
 import artCarouselStyles from "../styles/ArtCarousel.module.css";
 import RecursiveTimeout from "./recursiveTimeout";
 
-const AUTOPLAY_INTERVAL = 5000;
+const AUTOPLAY_INTERVAL = 4000;
 
-const ArtCarousel = ({ images, backgroundImage }) => {
+const ArtCarousel = ({ text, images, backgroundImage }) => {
   const mainpageStyle = {
     backgroundImage: `url(${backgroundImage})`,
   };
@@ -56,58 +56,54 @@ const ArtCarousel = ({ images, backgroundImage }) => {
   const scrollPrev = () => {
     if (embla) {
       embla.scrollPrev();
+      stop();
     }
   };
 
   const scrollNext = () => {
     if (embla) {
       embla.scrollNext();
+      stop();
     }
   };
 
   return (
+    <>
     <div className={artCarouselStyles.mainpage} style={mainpageStyle}>
+        <div className={artCarouselStyles.textcontainer}>
+          <p className={artCarouselStyles.text}>{text}</p>
+        </div>
       <div className={artCarouselStyles.bodycontainer}>
-        {/* Left Arrow */}
         <div className={artCarouselStyles.carousel}>
-{/*         <div>
-        <button className={artCarouselStyles.arrowLeft} onClick={scrollPrev}>
-          &lt;
-        </button>
-        </div> */}
           <div className={artCarouselStyles.embla} ref={emblaRef}>
             <div className={artCarouselStyles.embla__container}>
               {images.map((image) => (
                 <div key={image.id} className={artCarouselStyles.slide}>
                   <div className={artCarouselStyles.slideContent}>
                     <img className={artCarouselStyles.image} src={image} />
-                    <div className={artCarouselStyles.dotcontainer}>
-                      {scrollSnaps.map((_, idx) => (
-                        <button
-                          className={
-                            idx === selectedIndex
-                              ? artCarouselStyles.yellowdot
-                              : artCarouselStyles.graydot
-                          }
-                          key={idx}
-                          onClick={() => scrollTo(idx)}
-                        />
-                      ))}
-                    </div>
                   </div>
                 </div>
               ))}
             </div>
+            <div className={artCarouselStyles.dotcontainer}>
+              <button
+                className={artCarouselStyles.arrowLeft}
+                onClick={scrollPrev}
+              >
+                &lt;
+              </button>
+              <button
+                className={artCarouselStyles.arrowRight}
+                onClick={scrollNext}
+              >
+                &gt;
+              </button>
+            </div>
           </div>
         </div>
-        {/* Right Arrow */}
-        {/* <div>
-        <button className={artCarouselStyles.arrowRight} onClick={scrollNext}>
-          &gt;
-        </button>
-        </div> */}
       </div>
     </div>
+    </>
   );
 };
 
