@@ -30,9 +30,9 @@ const Posts = ({ backgroundImage }) => {
   }, []);
 
   return (
-    <>
-      <section className={blogStyles.mainpage} style={mainpageStyle}>
-        <div className={blogStyles.bodycontainer}>
+    <main className={blogStyles.main} style={mainpageStyle}>
+      <section className={blogStyles.mainpage} >
+{/*         <div className={blogStyles.bodycontainer}> */}
           <div className={blogStyles.titleContainer}>
           <h1 className={blogStyles.boldtext}>Welcome to my world....</h1>
           </div>
@@ -58,9 +58,9 @@ const Posts = ({ backgroundImage }) => {
                 </article>
               ))}
           </div>
-        </div>
+{/*         </div> */}
       </section>
-    </>
+    </main>
   );
 };
 
