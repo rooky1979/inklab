@@ -4,7 +4,7 @@ import Navbar from '@/components/Navbar'
 import Posts from '@/components/Posts'
 
 
-const blog = () => {
+const posts = () => {
   return (
     <>
       <Navbar />
@@ -14,4 +14,4 @@ const blog = () => {
   )
 }
 
-export default blog
+export default posts

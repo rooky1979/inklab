@@ -10,23 +10,12 @@
   background-size: cover;
   background-attachment: fixed;
 }
-
-/* .mainpage {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   background-size: cover;
-   background-attachment: fixed;
-   border: none;
-} */
 .mainpage {
-  width: 100%; /* Assuming you want it to take up the full width of its container */
-  max-width: 100%; /* Assuming you want it to be as wide as its parent container (container class in Tailwind) */
+  width: 100%;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  /* You can also add other CSS properties here as needed */
 }
-
 .bodycontainer {
     display: flex;
     flex-direction: column;
@@ -45,67 +34,73 @@
 .grid {
     display: grid;
     gap: 2rem;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
 }
-@media (min-width: 275px) and (max-width: 2200) {
+.boldtext {
+  font-family: "Roboto";
+  font-size: 45px;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+  padding-bottom: 1rem;
+}  .tiletext {
+  font-family: "Roboto";
+  color: #333; 
+  font-size: 1.125rem; 
+  padding-left: 0.75rem; 
+  padding-top: 1rem; 
+  padding-right: 0.75rem;
+  background-color: rgba(255, 0, 0, 0.75); 
+  color: #fff;
+  border-radius: 0.25rem;
+}
+.tile {
+  display: block;
+  height: 16rem; 
+  position: relative;
+  border-radius: 0.25rem; 
+  box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.1); 
+  background-color: #fff;
+  border-left: 0.25rem solid #22c55e; 
+  line-height: 1.25;
+}
+.postimage {
+  width: 100%;
+  height: 100%;
+  border-radius: 0 0.25rem 0.25rem 0; 
+  object-fit: cover;
+  position: absolute;
+}
+.tiletitle {
+  display: block;
+  position: relative;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-right: 1rem; 
+  padding-bottom: 1rem; 
+  
+}
+@media (min-width: 275px) and (max-width: 1440px) {
     .grid {
         grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 }
-/* @media (min-width: 275px) and (max-width: 768px) {
+@media (min-width: 275px) and (max-width: 767px) {
     .grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
-} */
-/* @media (min-width: 275px) and (max-width: 640px) {
+}
+@media (min-width: 275px) and (max-width: 530px) {
+  .boldtext {
+    font-size: 40px;
+  }
     .grid {
         grid-template-columns: repeat(1, minmax(0, 1fr));
     }
-} */
-.boldtext {
-    font-family: "Roboto";
-    font-size: 45px;
-    font-weight: 600;
-    color: rgb(42, 42, 42);
-    background-color: transparent;
-    padding-bottom: 0.4rem;
-  }
-  .tiletext {
-    font-family: "Roboto";
-    color: #333; 
-    font-size: 1.125rem; 
-    padding-left: 0.75rem; 
-    padding-top: 1rem; 
-    padding-right: 0.75rem;
-    background-color: rgba(255, 0, 0, 0.75); 
-    color: #fff;
-  }
-  
-  .tile {
-    display: block;
-    height: 16rem; 
-    position: relative;
-    border-radius: 0.25rem; 
-    box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.1); 
-    background-color: #fff;
-    border-left: 0.25rem solid #22c55e; 
-    line-height: 1.25;
-  }
-  .postimage {
-    width: 100%;
-    height: 100%;
-    border-radius: 0 0.25rem 0.25rem 0; 
-    object-fit: cover;
-    position: absolute;
-  }
-  .tiletitle {
-    display: block;
-    position: relative;
-    height: 100%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    padding-right: 1rem; 
-    padding-bottom: 1rem; 
-  }
+}
+
+
   
 

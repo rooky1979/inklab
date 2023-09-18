@@ -3,5 +3,13 @@
     "paths": {
       "@/*": ["./*"]
     }
-  }
+  },
+  "include": [
+    "next-env.d.ts",
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+    "src/**/*.js",
+    "pages/posts/**/[slug].js" // Add this line to include dynamic route files
+, "pages/posts/index.js"  ]
 }
