@@ -62,4 +62,7 @@
     max-width: 100%; 
     align-items: center;
   }
+  .paragraph {
+    margin-bottom: 3rem;
+  }
   

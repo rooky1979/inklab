@@ -10,6 +10,14 @@ function urlFor(source) {
   return builder.image(source);
 }
 
+const serializers = {
+  types: {
+    paragraph: (props) => <p className={singlePostStyles.paragraph}>{props.children}</p>,
+    // Add serializers for other types if needed
+    hardBreak: true,
+  },
+};
+
 const PostDetail = () => {
   const router = useRouter();
   const { slug } = router.query;
@@ -51,7 +59,7 @@ const PostDetail = () => {
     // You can add a loading indicator here
     return <div>Loading...</div>;
   }
-
+ console.log(post.body)
   return (
     <main className={singlePostStyles.singlepostmain}>
     <article className={singlePostStyles.singlepostarticle}>
@@ -79,7 +87,9 @@ const PostDetail = () => {
           <BlockContent 
           blocks={post.body} 
           projectId="3tju7dlp" 
-          dataset="production"/>
+          dataset="production"
+          serializers={serializers}
+          />
           </div>
     </article>
   </main>
@@ -87,7 +97,3 @@ const PostDetail = () => {
 };
 
 export default PostDetail;
-    {/* <div className={singlePostStyles.postDetail}>
-      <h1>{post.title}</h1>
-      <div dangerouslySetInnerHTML={{ __html: post.body }} />
-    </div> */}
