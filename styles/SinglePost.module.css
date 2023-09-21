@@ -63,7 +63,11 @@
     align-items: center;
   }
   .paragraph {
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
     color: black;
+  }
+  .boldHeading {
+    font-weight: bold;
+    /* Add any other styling you need */
   }
   

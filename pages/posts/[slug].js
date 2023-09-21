@@ -3,20 +3,12 @@ import { useRouter } from "next/router";
 import { client } from "@/sanity/lib/client";
 import singlePostStyles from "../../styles/SinglePost.module.css";
 import imageUrlBuilder from "@sanity/image-url";
-import BlockContent from "@sanity/block-content-to-react"
+import BlockContent from "@sanity/block-content-to-react";
 
 const builder = imageUrlBuilder(client);
 function urlFor(source) {
   return builder.image(source);
 }
-
-const serializers = {
-  types: {
-    paragraph: (props) => <p className={singlePostStyles.paragraph}>{props.children}</p>,
-    // Add serializers for other types if needed
-    hardBreak: true,
-  },
-};
 
 const PostDetail = () => {
   const router = useRouter();
@@ -47,8 +39,7 @@ const PostDetail = () => {
           if (data && data.length > 0) {
             setPost(data[0]);
           } else {
-            // Handle the case where the post is not found
-            alert("Post not found")
+            alert("Post not found");
           }
         })
         .catch(console.error);
@@ -56,43 +47,94 @@ const PostDetail = () => {
   }, [slug]);
 
   if (!post) {
-    // You can add a loading indicator here
     return <div>Loading...</div>;
   }
- console.log(post.body)
+  console.log(post.body);
+
+  const serializers = {
+    types: {
+      paragraph: (props) => (
+        <p className={singlePostStyles.paragraph}>{props.children}</p>
+      ),
+    },
+  };
+  /*   const processedContent = post.body.map((block) => {
+    if (block._type === "block") {
+      const paragraphs = block.children[0].text.split("\n");
+
+      return paragraphs.map((paragraph, index) => (
+        <p key={index} className={singlePostStyles.paragraph}>
+          {paragraph}
+          {index < paragraphs.length - 1 && <br />}
+        </p>
+      ));
+    }
+    // Handle other block types if needed
+    return serializers.types[block._type]
+      ? serializers.types[block._type](block)
+      : null;
+  }); */
+
+  const processedContent = post.body.map((block) => {
+    if (block._type === "block") {
+      const paragraphs = block.children[0].text.split("\n");
+
+      return paragraphs.map((paragraph, index) => {
+        // Use a regular expression to find and replace the markers with <strong> tags
+        const textWithBold = paragraph.replace(
+          /\*\*(.*?)\*\*/g,
+          (match, content) => <strong key={match}>{content}</strong>
+        );
+
+        return (
+          <p key={index} className={singlePostStyles.paragraph}>
+            {textWithBold}
+            {index < paragraphs.length - 1 && <br />}
+          </p>
+        );
+      });
+    }
+    // Handle other block types if needed
+    return serializers.types[block._type]
+      ? serializers.types[block._type](block)
+      : null;
+  });
+
   return (
     <main className={singlePostStyles.singlepostmain}>
-    <article className={singlePostStyles.singlepostarticle}>
-      <header className={singlePostStyles.header}>
-        <div className={singlePostStyles.singlepostcontainer}>
-          <div className={singlePostStyles.title}>
-            <h1 className={singlePostStyles.titletext}>{post.title}</h1>
-            <div className={singlePostStyles.authorimage}>
-              <img
-                src={urlFor(post.authorImage).url()}
-                alt={post.name}
-                className={singlePostStyles.image}
-              />
-              <p className={singlePostStyles.authorname}>
-                {post.name}
-              </p>
+      <article className={singlePostStyles.singlepostarticle}>
+        <header className={singlePostStyles.header}>
+          <div className={singlePostStyles.singlepostcontainer}>
+            <div className={singlePostStyles.title}>
+              <h1 className={singlePostStyles.titletext}>{post.title}</h1>
+              <div className={singlePostStyles.authorimage}>
+                <img
+                  src={urlFor(post.authorImage).url()}
+                  alt={post.name}
+                  className={singlePostStyles.image}
+                />
+                <p className={singlePostStyles.authorname}>{post.name}</p>
+              </div>
             </div>
           </div>
-        </div>
-        <img src={post.mainImage.asset.url} alt={post.title}
-        className={singlePostStyles.blogimage}
-        style={{height: "370px"}} />
-      </header>
-      <div className={singlePostStyles.bodystyle}>
-          <BlockContent 
+          <img
+            src={post.mainImage.asset.url}
+            alt={post.title}
+            className={singlePostStyles.blogimage}
+            style={{ height: "370px" }}
+          />
+        </header>
+        <div className={singlePostStyles.bodystyle}>
+          {/* <BlockContent 
           blocks={post.body} 
           projectId="3tju7dlp" 
           dataset="production"
           serializers={serializers}
-          />
-          </div>
-    </article>
-  </main>
+          /> */}
+          {processedContent}
+        </div>
+      </article>
+    </main>
   );
 };
 

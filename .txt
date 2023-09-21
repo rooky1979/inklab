@@ -2,6 +2,6 @@ todo
 
 Create decent subscribe/contact sending success/fails
 
-blog
+blog - need a go back button for the single posts
 
 page animations
