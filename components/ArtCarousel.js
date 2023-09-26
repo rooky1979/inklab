@@ -20,6 +20,19 @@ const ArtCarousel = ({ text, images, backgroundImage }) => {
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [scrollSnaps, setScrollSnaps] = useState([]);
 
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+  const [selectedImage, setSelectedImage] = useState("");
+
+  const openLightbox = (imageUrl) => {
+    setSelectedImage(imageUrl);
+    setLightboxOpen(true);
+  };
+
+  const closeLightbox = () => {
+    setSelectedImage("");
+    setLightboxOpen(false);
+  };
+
   const autoplay = useCallback(() => {
     if (!embla) return;
 
@@ -78,7 +91,7 @@ const ArtCarousel = ({ text, images, backgroundImage }) => {
           <div className={artCarouselStyles.embla} ref={emblaRef}>
             <div className={artCarouselStyles.embla__container}>
               {images.map((image) => (
-                <div key={image.id} className={artCarouselStyles.slide}>
+                <div key={image.id} className={artCarouselStyles.slide} onClick={() => openLightbox(image)}>
                   <div className={artCarouselStyles.slideContent}>
                     <img className={artCarouselStyles.image} src={image} />
                   </div>
@@ -103,6 +116,14 @@ const ArtCarousel = ({ text, images, backgroundImage }) => {
         </div>
       </div>
     </div>
+    {lightboxOpen && (
+        <div className={artCarouselStyles.lightbox}>
+          <button className={artCarouselStyles.closeButton} onClick={closeLightbox}>
+            &times;
+          </button>
+          <img className={artCarouselStyles.lightboxImage} src={selectedImage} alt="" />
+        </div>
+      )}
     </>
   );
 };

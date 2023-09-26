@@ -3,7 +3,6 @@ import { useRouter } from "next/router";
 import { client } from "@/sanity/lib/client";
 import singlePostStyles from "../../styles/SinglePost.module.css";
 import imageUrlBuilder from "@sanity/image-url";
-import BlockContent from "@sanity/block-content-to-react";
 
 const builder = imageUrlBuilder(client);
 function urlFor(source) {
@@ -58,29 +57,11 @@ const PostDetail = () => {
       ),
     },
   };
-  /*   const processedContent = post.body.map((block) => {
-    if (block._type === "block") {
-      const paragraphs = block.children[0].text.split("\n");
-
-      return paragraphs.map((paragraph, index) => (
-        <p key={index} className={singlePostStyles.paragraph}>
-          {paragraph}
-          {index < paragraphs.length - 1 && <br />}
-        </p>
-      ));
-    }
-    // Handle other block types if needed
-    return serializers.types[block._type]
-      ? serializers.types[block._type](block)
-      : null;
-  }); */
-
   const processedContent = post.body.map((block) => {
     if (block._type === "block") {
       const paragraphs = block.children[0].text.split("\n");
 
       return paragraphs.map((paragraph, index) => {
-        // Use a regular expression to find and replace the markers with <strong> tags
         const textWithBold = paragraph.replace(
           /\*\*(.*?)\*\*/g,
           (match, content) => <strong key={match}>{content}</strong>
@@ -99,6 +80,10 @@ const PostDetail = () => {
       ? serializers.types[block._type](block)
       : null;
   });
+
+  const handleBackClick = () => {
+    router.push("/blog");
+  };
 
   return (
     <main className={singlePostStyles.singlepostmain}>
@@ -124,16 +109,11 @@ const PostDetail = () => {
             style={{ height: "370px" }}
           />
         </header>
-        <div className={singlePostStyles.bodystyle}>
-          {/* <BlockContent 
-          blocks={post.body} 
-          projectId="3tju7dlp" 
-          dataset="production"
-          serializers={serializers}
-          /> */}
-          {processedContent}
-        </div>
+        <div className={singlePostStyles.bodystyle}>{processedContent}</div>
       </article>
+      <button className={singlePostStyles.backButton} onClick={handleBackClick}>
+        Back to Blog
+      </button>
     </main>
   );
 };

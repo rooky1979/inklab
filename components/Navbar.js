@@ -14,7 +14,7 @@ const MobileMenu = () => {
     <div className={navStyles.mobilemenu}>
       <a href="/bio">Bio</a>
       <a href="/portfolio">Portfolio</a>
-      <a href="/available">Available Art</a>
+      <a href="/availableart">Available Art</a>
       <a href="/blog">Blog</a>
       <a href="/contactbooking">Contact/Booking</a>
       <a href="/mailing">Secret Club</a>

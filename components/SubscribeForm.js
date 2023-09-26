@@ -102,7 +102,7 @@ const SubscribeForm = ({ backgroundImage }) => {
                 {...register("email")}
               />
             </div>
-            <button className={buttonStyles.primarybtn} type="submit">
+            <button className={buttonStyles.button} type="submit">
               Subscribe
             </button>
           </form>

@@ -161,7 +161,7 @@ const ContactForm = ({ backgroundImage }) => {
               required
             />
           </div>
-          <button className={buttonStyles.primarybtn} type="submit">
+          <button className={buttonStyles.button} type="submit">
             Submit
           </button>
           <div className={contactStyles.titletext}>

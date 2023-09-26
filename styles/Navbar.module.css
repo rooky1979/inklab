@@ -23,12 +23,14 @@
   margin-left: 1rem;
   margin-top: 0.5rem;
   font-family: "Anton";
-  font-size: x-large;
+  font-size: 23px;
+  transition: all 0.2s ease-in;
 }
 
 .logo:hover,
 .logo.activelink {
-  color: #0156ff;
+  color: #62bfed;
+  font-size: 24px;
 }
 
 /* Desktop Menu */
@@ -46,7 +48,8 @@
   padding: 10px; 
 }
 .icon {
-  margin-left: 2.3rem;
+  margin-left: 2.1rem;
+  padding-top: 0.5rem;
 }
 
 .menu a {
@@ -58,12 +61,13 @@
   font-weight: bold;
   font-size: 17px;
   text-decoration: none;
-  transition: 0.3s;
+  transition: all 0.2s ease-in;
 }
 
 .menu a:hover,
 .menu a.activelink {
-  color: #0156ff;
+  color: #62bfed;
+  font-size: 19px;
 }
 
 /* Mobile Menu Show & Close buttons */

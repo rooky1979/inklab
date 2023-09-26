@@ -1,7 +1,8 @@
 todo
 
+
 Create decent subscribe/contact sending success/fails
 
-blog - need a go back button for the single posts
+Change the background images for blog and available art
 
 page animations

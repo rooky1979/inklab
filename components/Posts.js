@@ -33,7 +33,7 @@ const Posts = ({ backgroundImage }) => {
     <main className={blogStyles.main} style={mainpageStyle}>
       <section className={blogStyles.mainpage} >
           <div className={blogStyles.titleContainer}>
-          <p className={blogStyles.boldtext}>Welcome to my world....</p>
+          <p className={blogStyles.boldtext}>Just some stuff...</p>
           </div>
           <div className={blogStyles.grid}>
             {postData &&

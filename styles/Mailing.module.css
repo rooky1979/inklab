@@ -22,7 +22,7 @@
 }
 .bodycontainer {
   display: flex;
-  width: 63%;
+  width: 70%;
   justify-content: center;
   align-items: center;
   padding: 2rem 3rem 2rem 3rem;
@@ -71,7 +71,7 @@
 }
 @media (min-width: 275px) and (max-width: 913px) {
   .bodycontainer {
-    width: 75%;
+    width: 85%;
   }
   .input {
     width: 100%;
@@ -79,7 +79,7 @@
 }
 @media (min-width: 275px) and (max-width: 541px) {
   .bodycontainer {
-    width: 75%;
+    width: 85%;
     padding: 1rem 1rem 1rem 1rem;
   }
   .input {

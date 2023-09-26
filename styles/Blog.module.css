@@ -43,16 +43,21 @@
   color: rgb(255, 255, 255);
   background-color: transparent;
   padding-bottom: 1rem;
-}  .tiletext {
+}  
+.tiletext {
   font-family: "Roboto";
   color: #333; 
   font-size: 1.125rem; 
   padding-left: 0.75rem; 
   padding-top: 1rem; 
   padding-right: 0.75rem;
-  background-color: rgba(255, 0, 0, 0.75); 
+  background-color: #62bfed; 
   color: #fff;
   border-radius: 0.25rem;
+  transition: all 0.2s ease-in;
+}
+.tiletext:hover {
+  background: #3f474e;
 }
 .tile {
   display: block;
@@ -61,7 +66,7 @@
   border-radius: 0.25rem; 
   box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.1); 
   background-color: #fff;
-  border-left: 0.25rem solid #22c55e; 
+  border-left: 0.25rem solid #c52222; 
   line-height: 1.25;
 }
 .postimage {
