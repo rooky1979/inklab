@@ -40,11 +40,13 @@ const Logo = () => {
             style={{ fontSize: 50, color: "orchid" }}
           />
         </Link>
+        <Link href="https://www.tiktok.com">
         <FontAwesomeIcon
           className={landingStyles.icon}
           icon={faTiktok}
           style={{ fontSize: 50, color: "gold" }}
         />
+        </Link>
         <Link href="./dashboard" className={buttonStyles.primarybtn}>
         Enter
       </Link>

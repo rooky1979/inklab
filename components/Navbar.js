@@ -58,11 +58,13 @@ const Navbar = () => {
               style={{ fontSize: 25, color: "orchid" }}
             />
           </Link>
+          <Link href="https://www.tiktok.com" >
           <FontAwesomeIcon
             className={navStyles.icon}
             icon={faTiktok}
             style={{ fontSize: 25, color: "gold" }}
           />
+          </Link>
         </div>
         {/* Desktop Menu, which only appears on large screens */}
         <div className={navStyles.menu}>

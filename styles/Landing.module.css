@@ -64,4 +64,8 @@
         justify-content: center;
         
     }
+    .textcontainer {
+         padding-top: 60px;
+         padding-left: 40px;
+    }
   }

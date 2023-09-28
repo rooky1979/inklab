@@ -1,8 +1,5 @@
 todo
 
-
-Create decent subscribe/contact sending success/fails
-
 Change the background images for blog and available art
 
 page animations

@@ -50,6 +50,9 @@
 .primarybtn:hover {
   background: #3f474e;
 }
+.button:hover {
+  background: #3f474e;
+}
 .secondarybtn:hover {
   background: #3f474e;
 }

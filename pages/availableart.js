@@ -8,8 +8,8 @@ const availableart = () => {
   return (
     <>
       <Navbar />
-      <Header title="Available Art" backgroundImage={"/steve4.webp"} />
-      <ArtCarousel text={availabletext} images={availableimgs} backgroundImage={"/steve4.webp"} />
+      <Header title="Available Art" backgroundImage={"/available.png"} />
+      <ArtCarousel text={availabletext} images={availableimgs} backgroundImage={"/available.png"} />
     </>
   );
 };

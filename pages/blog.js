@@ -8,8 +8,8 @@ const posts = () => {
   return (
     <>
       <Navbar />
-      <Header title="Blog" backgroundImage={"/whistler.jpg"} />
-      <Posts backgroundImage={"/whistler.jpg"} />
+      <Header title="Blog" backgroundImage={"/blog.jpg"} />
+      <Posts backgroundImage={"/blog.jpg"} />
     </>
   )
 }

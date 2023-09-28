@@ -2,8 +2,13 @@ import React, { useState } from "react";
 import contactStyles from "../styles/Contact.module.css";
 import buttonStyles from "../styles/Buttons.module.css";
 import axios from "axios";
+import DialogPopup from "./DialogPopup";
 
 const ContactForm = ({ backgroundImage }) => {
+  const [showDialog, setShowDialog] = useState(false);
+  const [dialogMessage, setDialogMessage] = useState("");
+  const [isDialogSuccess, setIsDialogSuccess] = useState(true);
+
   const mainpageStyle = {
     backgroundImage: `url(${backgroundImage})`,
   };
@@ -32,11 +37,15 @@ const ContactForm = ({ backgroundImage }) => {
         email: "",
         tattooEnquiry: "",
       });
-      alert("Email sent successfully!");
+      setIsDialogSuccess(true);
+      setDialogMessage("Email sent successfully!");
+      setShowDialog(true);
     } catch (error) {
-      alert(
+      setIsDialogSuccess(false);
+      setDialogMessage(
         "An error occurred while sending the email. Please try again later."
       );
+      setShowDialog(true);
       console.error("Error sending email:", error);
     }
   };
@@ -79,14 +88,14 @@ const ContactForm = ({ backgroundImage }) => {
               consultation, if needed.
             </li>
             <br />
-          <div className={contactStyles.text}>
-            <p>
-              Thats just to get a clear idea of what you’d like before I create
-              your artwork. Before drawing I’ll send details to pay a deposit,
-              which will be deducted from the price of the tattoo.
-            </p>
-            <br />
-          </div>
+            <div className={contactStyles.text}>
+              <p>
+                Thats just to get a clear idea of what you’d like before I
+                create your artwork. Before drawing I’ll send details to pay a
+                deposit, which will be deducted from the price of the tattoo.
+              </p>
+              <br />
+            </div>
           </ul>
           <div className={contactStyles.text}>
             <p>
@@ -211,6 +220,13 @@ const ContactForm = ({ backgroundImage }) => {
               purchase of artwork.
             </li>
           </ul>
+        {showDialog && (
+          <DialogPopup
+            message={dialogMessage}
+            isSuccess={isDialogSuccess}
+            onClose={() => setShowDialog(false)}
+          />
+        )}
         </form>
       </div>
     </div>

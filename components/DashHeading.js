@@ -42,11 +42,13 @@ const DashHeading = () => {
             style={{ fontSize: 25, color: "orchid" }}
           />
         </Link>
+        <Link href="https://www.tiktok.com" >
         <FontAwesomeIcon
           className={dashheadingStyles.icon}
           icon={faTiktok}
           style={{ fontSize: 25, color: "gold" }}
         />
+        </Link>
       </div>
     </div>
   );
