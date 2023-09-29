@@ -8,7 +8,7 @@ import {
 import React from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import dashheadingStyles from "../styles/Dashheading.module.css";
+import dashheadingStyles from "../styles/Dash.module.css";
 
 const DashHeading = () => {
   return (
