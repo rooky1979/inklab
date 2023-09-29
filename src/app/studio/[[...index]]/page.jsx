@@ -8,13 +8,13 @@
  * You can learn more about the next-sanity package here:
  * https://github.com/sanity-io/next-sanity
  */
-import Layout from '../../../../components/layout'
+import StudioLayout from '../../../../components/StudioLayout'
 import { NextStudio } from 'next-sanity/studio'
 import config from '../../../../sanity.config'
 
 export default function StudioPage() {
   return (
-  <Layout>
+  <StudioLayout>
   <NextStudio config={config} />
-  </Layout>)
+  </StudioLayout>)
 }
