@@ -52,7 +52,7 @@ My current rates are:
             </p>
             <p className={bodyStyles.text}>
             Hourly rate – $200/hour
-            </p>
+            </p>{/* hh */}
             <p className={bodyStyles.text}>
             One hour minimum charge
             </p>
