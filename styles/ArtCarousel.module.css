@@ -1,3 +1,15 @@
+.mainavailable {
+  background-image: url("/available.png");
+  background-size: cover;
+  background-attachment: fixed;
+
+}
+.mainportfolio {
+  background-image: url("/steve3.png");
+  background-size: cover;
+  background-attachment: fixed;
+
+}
 .mainpage {
   display: flex;
   flex-direction: column;

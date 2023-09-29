@@ -39,7 +39,6 @@ const Logo = () => {
         PROVIDING THE BEST TATTOO EXPERIENCE
       </motion.p>
       <div className={landingStyles.socialicons}>
-        {/* Wrap the icons in a flex container to keep them inline */}
         <div style={{ display: "flex" }}>
           <Link href="https://www.youtube.com/@TheInkLab">
             <motion.div
@@ -94,7 +93,6 @@ const Logo = () => {
             </motion.div>
           </Link>
         </div>
-        {/* Button */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}

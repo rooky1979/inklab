@@ -1,9 +1,15 @@
+import { motion, AnimatePresence } from "framer-motion";
 import React, { useState, useEffect, useCallback, useRef } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import artCarouselStyles from "../styles/ArtCarousel.module.css";
 import RecursiveTimeout from "./recursiveTimeout";
 
 const AUTOPLAY_INTERVAL = 4000;
+
+const fadeInVariant = {
+  hidden: { opacity: 0 },
+  visible: { opacity: 1, transition: { duration: 1.5, delay: 2.5 } }, // Adjust the duration as needed
+};
 
 const ArtCarousel = ({ text, images, backgroundImage }) => {
   const mainpageStyle = {
@@ -81,21 +87,39 @@ const ArtCarousel = ({ text, images, backgroundImage }) => {
   };
 
   return (
-    <>
-    <div className={artCarouselStyles.mainpage} style={mainpageStyle}>
-        <div className={artCarouselStyles.textcontainer}>
-          <p className={artCarouselStyles.text}>{text}</p>
-        </div>
+    <motion.div
+      initial="hidden"
+      animate="visible"
+      variants={fadeInVariant}
+      className={artCarouselStyles.mainpage}
+      style={mainpageStyle}
+    >
+      <div className={artCarouselStyles.textcontainer}>
+        <p className={artCarouselStyles.text}>{text}</p>
+      </div>
       <div className={artCarouselStyles.bodycontainer}>
         <div className={artCarouselStyles.carousel}>
           <div className={artCarouselStyles.embla} ref={emblaRef}>
             <div className={artCarouselStyles.embla__container}>
               {images.map((image) => (
-                <div key={image.id} className={artCarouselStyles.slide} onClick={() => openLightbox(image)}>
+                <motion.div
+                  key={image.id}
+                  className={artCarouselStyles.slide}
+                  onClick={() => openLightbox(image)}
+                  initial="hidden"
+                  animate="visible"
+                  variants={fadeInVariant}
+                >
                   <div className={artCarouselStyles.slideContent}>
-                    <img className={artCarouselStyles.image} src={image} />
+                    <motion.img
+                      className={artCarouselStyles.image}
+                      src={image}
+                      initial="hidden"
+                      animate="visible"
+                      variants={fadeInVariant}
+                    />
                   </div>
-                </div>
+                </motion.div>
               ))}
             </div>
             <div className={artCarouselStyles.dotcontainer}>
@@ -115,16 +139,31 @@ const ArtCarousel = ({ text, images, backgroundImage }) => {
           </div>
         </div>
       </div>
-    </div>
-    {lightboxOpen && (
-        <div className={artCarouselStyles.lightbox}>
-          <button className={artCarouselStyles.closeButton} onClick={closeLightbox}>
-            &times;
-          </button>
-          <img className={artCarouselStyles.lightboxImage} src={selectedImage} alt="" />
-        </div>
-      )}
-    </>
+      <AnimatePresence>
+        {lightboxOpen && (
+          <motion.div
+            className={artCarouselStyles.lightbox}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+          >
+            <button
+              className={artCarouselStyles.closeButton}
+              onClick={closeLightbox}
+            >
+              &times;
+            </button>
+            <motion.img
+              className={artCarouselStyles.lightboxImage}
+              src={selectedImage}
+              alt=""
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+            />
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </motion.div>
   );
 };
 
