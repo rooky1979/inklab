@@ -4,12 +4,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 /* BioHeader Component */
+.main {
+   background-image: url("/biobkg.jpg");
+   background-size: cover;
+   background-attachment: fixed;
+
+}
 .mainpage {
     display: flex;
     justify-content: center;
     align-items: center;
    /*  background-color: transparent /* rgb(113, 118, 117) */;
-   background-image: url("/biobkg.jpg");
+   /* background-image: url("/biobkg.jpg"); */
    background-size: cover;
    background-attachment: fixed;
    border: none;

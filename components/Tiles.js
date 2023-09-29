@@ -1,23 +1,44 @@
+// Tiles.js
 import React from "react";
 import Link from "next/link";
+import { motion } from "framer-motion";
 import tileStyles from "@/styles/Tiles.module.css";
 import { tiles } from "../tileDetails";
 
+const tileVariants = {
+  hidden: { x: -100 },
+  visible: {
+    x: 0,
+    transition: {
+      duration: 0.5,
+      ease: "easeOut",
+    },
+  },
+};
+
 const Tiles = () => {
   return (
-    <main className={tileStyles.main}>
+    <motion.main
+      initial="hidden"
+      animate="visible"
+      variants={tileVariants}
+      transition={{ staggerChildren: 0.2 }}
+      className={tileStyles.main}
+    >
       <div className={tileStyles.grid}>
         {tiles.map((tile) => (
           <Link href={tile.ref} key={tile.id}>
-            {/* <img className={tileStyles.card} src={tile.src} /> */}
-            <div className={tileStyles.card}>
+            <motion.div
+              variants={tileVariants}
+              className={tileStyles.card}
+            >
               <p className={tileStyles.title}>{tile.title}</p>
               <p className={tileStyles.description}>{tile.desc}</p>
-            </div>
+            </motion.div>
           </Link>
         ))}
       </div>
-    </main>
+    </motion.main>
   );
 };
 

@@ -1,5 +1,3 @@
 todo
 
-Change the background images for blog and available art
-
 page animations

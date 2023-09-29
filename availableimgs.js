@@ -19,4 +19,4 @@ export const availableimgs = [
     "avail18.jpg",
   ];
 
-  export const availabletext = "I love drawing custom work based on client ideas, but really find some of my favourite tattoos comes from my own artwork. It really allows me to create an image that I think would make a great tattoo, without any restrictions. I have compiled some of this artwork in the gallery below. Each design is ready and waiting for it’s perfect client to find it! If there is anything you like, get in contact to secure it.";
+  export const availabletext = "I love drawing custom work based on client ideas, but really find some of my favourite tattoos comes from my own artwork. It really allows me to create an image that I think would make a great tattoo, without any restrictions. I have compiled some of this artwork in the gallery below. Each design is ready and waiting for it’s perfect client to find it! If there is anything you like, get in contact to secure it. Click on an image below to see it fullscreen.";
