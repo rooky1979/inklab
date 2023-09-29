@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import blogStyles from "../styles/Blog.module.css";
 import { client } from "@/sanity/lib/client";
 import Link from "next/link";
-import { motion } from "framer-motion"; // Import motion from framer-motion
+import { motion } from "framer-motion";
 
 const slideInVariant = {
   hidden: { x: -100, opacity: 0 },

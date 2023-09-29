@@ -3,6 +3,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Allura&family=Anton&family=Antonio&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
+.mainfaqs {
+  background-image: url("/parlour.jpeg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+.maincontact {
+  background-image: url("/aftercare.png");
+  background-size: cover;
+  background-attachment: fixed;
+}
 .mainpage {
     display: flex;
     justify-content: center;

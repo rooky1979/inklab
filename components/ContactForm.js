@@ -3,6 +3,12 @@ import contactStyles from "../styles/Contact.module.css";
 import buttonStyles from "../styles/Buttons.module.css";
 import axios from "axios";
 import DialogPopup from "./DialogPopup";
+import { motion } from "framer-motion";
+
+const fadeInVariant = {
+  hidden: { opacity: 0 },
+  visible: { opacity: 1, transition: { duration: 2, delay: 2} },
+};
 
 const ContactForm = ({ backgroundImage }) => {
   const [showDialog, setShowDialog] = useState(false);
@@ -52,7 +58,11 @@ const ContactForm = ({ backgroundImage }) => {
 
   return (
     <div className={contactStyles.mainpage} style={mainpageStyle}>
-      <div className={contactStyles.bodycontainer}>
+      <motion.div 
+      initial="hidden"
+      animate="visible"
+      variants={fadeInVariant}
+      className={contactStyles.bodycontainer}>
         <form onSubmit={handleSubmit}>
           <div className={contactStyles.titletext}>
             <p>Use this contact form to get the conversation going!</p>
@@ -228,7 +238,7 @@ const ContactForm = ({ backgroundImage }) => {
           />
         )}
         </form>
-      </div>
+      </motion.div>
     </div>
   );
 };

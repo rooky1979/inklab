@@ -52,9 +52,11 @@
 
 .google {
   height: 20px;
-  margin-left: 5rem;
+  margin-left: 8rem;
 }
 
 .googlecontainer {
   width: 100%;
+  display: flex;
+  justify-content: space-between;
 }

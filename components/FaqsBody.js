@@ -1,5 +1,11 @@
 import React from "react";
 import bodyStyles from "../styles/AftercareFAQs.module.css";
+import { motion } from "framer-motion";
+
+const fadeInVariant = {
+  hidden: { opacity: 0 },
+  visible: { opacity: 1, transition: { duration: 2, delay: 2} },
+};
 
 const FaqsBody = ({backgroundImage}) => {
   const mainpageStyle = {
@@ -8,7 +14,11 @@ const FaqsBody = ({backgroundImage}) => {
   return (
     <>
       <div className={bodyStyles.mainpage} style={mainpageStyle}>
-        <div className={bodyStyles.bodycontainer}>
+        <motion.div 
+        initial="hidden"
+        animate="visible"
+        variants={fadeInVariant}
+        className={bodyStyles.bodycontainer}>
           <div>
             <p className={bodyStyles.boldtext}>
             Where to get tattooed in Whistler?
@@ -107,7 +117,7 @@ My current rates are:
               </a></strong> form & I’ll be in touch soon!
             </p>
           </div>
-        </div>
+        </motion.div>
       </div>
     </>
   );

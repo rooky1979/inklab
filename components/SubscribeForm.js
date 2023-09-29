@@ -1,8 +1,14 @@
 import { useForm } from "react-hook-form";
 import React, { useState } from "react";
-import formStyles from "../styles/Mailing.module.css";
+import formStyles from "../styles/Subscribe.module.css";
 import buttonStyles from "../styles/Buttons.module.css";
 import DialogPopup from "./DialogPopup";
+import { motion } from "framer-motion";
+
+const fadeInVariant = {
+  hidden: { opacity: 0 },
+  visible: { opacity: 1, transition: { duration: 2, delay: 2} },
+};
 
 const SubscribeForm = ({ backgroundImage }) => {
   const [showDialog, setShowDialog] = useState(false);
@@ -26,13 +32,13 @@ const SubscribeForm = ({ backgroundImage }) => {
       });
 
       if (response.ok) {
-        // Handle a successful subscription
+
         reset();
         setIsDialogSuccess(true);
         setDialogMessage("Thank you for subscribing!");
         setShowDialog(true);
       } else {
-        // Handle errors
+
         setIsDialogSuccess(false);
         setDialogMessage("Subscription failed. Please try again later.");
         setShowDialog(true);
@@ -43,9 +49,12 @@ const SubscribeForm = ({ backgroundImage }) => {
   };
   return (
     <div className={formStyles.mainpage} style={mainpageStyle}>
-      <div className={formStyles.bodycontainer}>
+      <motion.div 
+      initial="hidden"
+      animate="visible"
+      variants={fadeInVariant}
+      className={formStyles.bodycontainer}>
         <form
-          /* className={formStyles.formcontainer} */
           onSubmit={handleSubmit(onSubmit)}
         >
           <div className={formStyles.titletext}>
@@ -122,7 +131,7 @@ const SubscribeForm = ({ backgroundImage }) => {
             />
           )}
         </form>
-      </div>
+      </motion.div>
     </div>
   );
 };

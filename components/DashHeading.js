@@ -1,4 +1,3 @@
-// DashHeading.js
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faYoutube,
@@ -8,15 +7,15 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import React from "react";
 import Link from "next/link";
-import { motion } from "framer-motion"; // Import motion from Framer Motion
+import { motion } from "framer-motion";
 import dashheadingStyles from "../styles/Dashheading.module.css";
 
 const DashHeading = () => {
   return (
-    <motion.div // Wrap the entire component with motion.div
+    <motion.div
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1, delay: 1 }} // Adjust animation properties as needed
+      transition={{ duration: 1, delay: 1 }}
     >
       <div>
         <div className={dashheadingStyles.headingcontainer}>
