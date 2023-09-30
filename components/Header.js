@@ -14,7 +14,7 @@ const mainpageStyle = {
 }
 
   return (
-    <div className={headerStyles.mainpage} style={mainpageStyle}>
+    <div className={headerStyles.mainpage}/*  style={mainpageStyle} */>
       <div className={headerStyles.container}>
         <div className={headerStyles.textcontainer}>
           <motion.p 
