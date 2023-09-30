@@ -9,22 +9,21 @@ Dashboard -
 All font is in times new roman
 
 Bio - 
-All font in time new roman inc. navbar
+Bkg pic not fixed
 
-Portfolio - Everything is fine inc. Navbar
+Portfolio - Bkg pic not fixed
 
-Available art - Everything is fine inc. Navbar
+Available art - Bkg pic not fixed
 
-Blog - Everything in times new roman inc. Navbar
+Blog - Bkg pic not fixed
 
-Contact - Everything in times new roman inc. Navbar
+Contact - Bkg pic not fixed
 
-Secret club - Everything in times new roman inc. Navbar
+Secret club - Bkg pic not fixed
 
-Aftercare - Everything in times new roman inc. Navbar
+Aftercare - Bkg pic not fixed
 
-FAQS - Everything in times new roman inc. Navbar
-Background pic is pixelated. Need a higher res pic
+FAQS - Bkg pic not fixed
 
 In desktop:
 
