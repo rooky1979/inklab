@@ -80,22 +80,28 @@
 @media (min-width: 275px) and (max-width: 515px) {
     .header {
         font-size: 45px;
+        font-family: "Anton";
       }
       .text {
         font-size: 20px;
+        font-family: "Roboto";
       }
       .boldtext {
         font-size: 20px;
+        font-family: "Roboto";
       }
 }
 @media (min-width: 275px) and (max-width: 385px) {
     .header {
         font-size: 40px;
+        font-family: "Anton";
       }
       .text {
         font-size: 17px;
+        font-family: "Roboto";
       }
       .boldtext {
         font-size: 17px;
+        font-family: "Roboto";
       }
 }
