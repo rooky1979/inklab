@@ -7,7 +7,7 @@
   background-image: url("/tattoosign.jpg");
   background-size: cover;
   background-attachment: fixed;
-  position: fixed;
+  background-position: center;
 }
 .maincontact {
   background-image: url("/aftercare.png");
