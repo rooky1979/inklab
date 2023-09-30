@@ -8,8 +8,8 @@ const faqs = () => {
   return (
     <main className={faqsStyles.mainfaqs}>
       <Navbar />
-      <Header title="FAQs" backgroundImage={"/parlour.jpeg"}/>
-      <FaqsBody backgroundImage={"/parlour.jpeg"}/>
+      <Header title="FAQs" backgroundImage={"/tattoosign.jpg"}/>
+      <FaqsBody backgroundImage={"/tattoosign.jpg"}/>
     </main>
   )
 }
