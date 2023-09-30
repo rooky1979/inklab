@@ -70,7 +70,7 @@ const ContactForm = ({ backgroundImage }) => {
           </div>
           <div className={contactStyles.text}>
             <p>
-              You'll find all of my booking info below. Please read all of these
+              You{'\u0027'}ll find all of my booking info below. Please read all of these
               sections, then contact me using the contact form at the bottom of
               this page. I also highly suggest checking out the FAQs page to see
               if your questions are answered there first.
@@ -120,7 +120,7 @@ const ContactForm = ({ backgroundImage }) => {
             <p>
               I check messages regularly and I reply to all inquiries quickly.
               Bigger projects I can advise my wait time for drawing. Smaller
-              tattoos, I can often fit in a little sooner. I’m currently taking
+              tattoos, I can often fit in a little sooner. I{'\u0027'}m currently taking
               a wide range of projects. If you are unsure whether your idea
               matches my style – just ask!
             </p>
@@ -128,7 +128,7 @@ const ContactForm = ({ backgroundImage }) => {
           </div>
           <div className={contactStyles.text}>
             <p>
-              If you are ready to book, or have questions for me, then it's time
+              If you are ready to book, or have questions for me, then it{'\u0027'}s time
               to reach out!
             </p>
             <br />
@@ -185,7 +185,7 @@ const ContactForm = ({ backgroundImage }) => {
           </button>
           <div className={contactStyles.titletext}>
             <br />
-            <p>Booking T's and C's</p>
+            <p>Booking T{'\u0027'}s and C{'\u0027'}s</p>
             <br />
           </div>
           <ul className={contactStyles.text}>

@@ -12,14 +12,14 @@ import Link from "next/link";
 const MobileMenu = () => {
   return (
     <div className={navStyles.mobilemenu}>
-      <a href="/bio">Bio</a>
-      <a href="/portfolio">Portfolio</a>
-      <a href="/availableart">Available Art</a>
-      <a href="/blog">Blog</a>
-      <a href="/contactbooking">Contact/Booking</a>
-      <a href="/mailing">Secret Club</a>
-      <a href="/aftercare">Aftercare</a>
-      <a href="/faqs">FAQs</a>
+      <Link href="/bio">Bio</Link>
+      <Link href="/portfolio">Portfolio</Link>
+      <Link href="/availableart">Available Art</Link>
+      <Link href="/blog">Blog</Link>
+      <Link href="/contactbooking">Contact/Booking</Link>
+      <Link href="/mailing">Secret Club</Link>
+      <Link href="/aftercare">Aftercare</Link>
+      <Link href="/faqs">FAQs</Link>
     </div>
   );
 };
@@ -34,9 +34,9 @@ const Navbar = () => {
     <>
       <div className={navStyles.topnav}>
       <div className={navStyles.socialicons}>
-        <a href="/dashboard">
+        <Link href="/dashboard">
           <p className={navStyles.logo}>The ink Lab by Steve Kretz</p>
-        </a>
+        </Link>
           <Link href="https://www.youtube.com/@TheInkLab">
             <FontAwesomeIcon
               className={navStyles.icon}
@@ -68,14 +68,14 @@ const Navbar = () => {
         </div>
         {/* Desktop Menu, which only appears on large screens */}
         <div className={navStyles.menu}>
-          <a href="/bio">Bio</a>
-          <a href="/portfolio">Portfolio</a>
-          <a href="/availableart">Available Art</a>
-          <a href="/blog">Blog</a>
-          <a href="/contactbooking">Contact/Booking</a>
-          <a href="/mailing">Secret Club</a>
-          <a href="/aftercare">Aftercare</a>
-          <a href="/faqs">FAQs</a>
+          <Link href="/bio">Bio</Link>
+          <Link href="/portfolio">Portfolio</Link>
+          <Link href="/availableart">Available Art</Link>
+          <Link href="/blog">Blog</Link>
+          <Link href="/contactbooking">Contact/Booking</Link>
+          <Link href="/mailing">Secret Club</Link>
+          <Link href="/aftercare">Aftercare</Link>
+          <Link href="/faqs">FAQs</Link>
         </div>
 
         {/* This button only shows up on small screens. It is used to open the mobile menu */}

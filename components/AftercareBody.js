@@ -1,7 +1,7 @@
 import React from "react";
 import bodyStyles from "../styles/AftercareFAQs.module.css";
 import { motion } from "framer-motion";
-
+import Link from "next/link";
 const fadeInVariant = {
   hidden: { opacity: 0 },
   visible: { opacity: 1, transition: { duration: 2, delay: 2} },
@@ -102,7 +102,7 @@ const AftercareBody = ({ backgroundImage }) => {
             <p className={bodyStyles.text}>
               <strong>Email:</strong> stevek.tattoo@gmail.com or contact me
               through the 
-              <strong><a className={bodyStyles.tabhover} href="/contactbooking"> Contact/Booking </a></strong> 
+              <strong><Link className={bodyStyles.tabhover} href="/contactbooking"> Contact/Booking </Link></strong> 
               tab.
             </p>
             <br />

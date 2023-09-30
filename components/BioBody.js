@@ -59,7 +59,7 @@ const BioBody = () => {
               variants={fadeInVariant}
               className={bioStyles.text}
             >
-              Auckland's vibrant tattoo culture captivated me, especially the prominence of Māori art. Despite unemployment, I immersed myself in creating art, gradually merging it with my newfound fascination with cultural Polynesian tattoos and Moko (traditional Māori tattoo). A year later, in Queenstown, I met Melissa, my future wife who is Canadian. After navigating a series of moves, we both decided to make the move to her home of Canada, more importantly her hometown of Whistler.
+              Auckland{'\u0027'}s vibrant tattoo culture captivated me, especially the prominence of Māori art. Despite unemployment, I immersed myself in creating art, gradually merging it with my newfound fascination with cultural Polynesian tattoos and Moko (traditional Māori tattoo). A year later, in Queenstown, I met Melissa, my future wife who is Canadian. After navigating a series of moves, we both decided to make the move to her home of Canada, more importantly her hometown of Whistler.
             </motion.p>
           </div>
           <div className={bioStyles.leftcontainer}>
@@ -93,7 +93,7 @@ const BioBody = () => {
               variants={fadeInVariant}
               className={bioStyles.text}
             >
-              My yearning to learn tattooing persisted, but apprenticeships remained elusive. Undeterred, I embarked on a self-taught journey, tattooing fruits and myself while meticulously documenting my progress (I don’t recommend this method). By 2017, I helped Dave Petko of Black Ohm Tattoos on a “Trees for BC” fundraiser organized by Kelsey Bareham, owner of The Whistler Tattoo Company. After a successful fundraiser, Dave offered me a permanent place in his studio. Thus began my journey as a tattoo artist.
+              My yearning to learn tattooing persisted, but apprenticeships remained elusive. Undeterred, I embarked on a self-taught journey, tattooing fruits and myself while meticulously documenting my progress (I don{'\u0027'}t recommend this method). By 2017, I helped Dave Petko of Black Ohm Tattoos on a “Trees for BC” fundraiser organized by Kelsey Bareham, owner of The Whistler Tattoo Company. After a successful fundraiser, Dave offered me a permanent place in his studio. Thus began my journey as a tattoo artist.
             </motion.p>
           </div>
         </div>
