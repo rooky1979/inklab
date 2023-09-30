@@ -43,7 +43,7 @@ const BioBody = () => {
               className={bioStyles.text}
             >
               Infatuated with Hip Hop culture, I had a penchant for graffiti
-              from an early age. New York's rich tapestry of music, art, and
+              from an early age. New York{'\u0027'}s rich tapestry of music, art, and
               people rejuvenated this passion. A month-long stay inspired me
               profoundly, guiding my path towards Auckland, New Zealand.
             </motion.p>
@@ -107,7 +107,7 @@ const BioBody = () => {
               variants={fadeInVariant}
               className={bioStyles.text}
             >
-              My style & techniques are constantly evolving. I still take notes on every tattoo and refine my process in every way to ensure I am creating the best tattoos, with the least possible damage to the skin. This is all part of my aim to provide the best possible tattoo experience. This also includes the way I approach conversations, emails, consultations, and the whole tattoo design process. The serene backdrop of Whistler, coupled with the support of clients worldwide, brought my dream to fruition.
+              My style and techniques are constantly evolving. I still take notes on every tattoo and refine my process in every way to ensure I am creating the best tattoos, with the least possible damage to the skin. This is all part of my aim to provide the best possible tattoo experience. This also includes the way I approach conversations, emails, consultations, and the whole tattoo design process. The serene backdrop of Whistler, coupled with the support of clients worldwide, brought my dream to fruition.
             </motion.p>
           </div>
           <div className={bioStyles.leftcontainer}>

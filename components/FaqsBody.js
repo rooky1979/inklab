@@ -25,7 +25,7 @@ const FaqsBody = ({backgroundImage}) => {
             Where to get tattooed in Whistler?
             </p>
             <p className={bodyStyles.text}>
-            There are many great artists in Whistler. Please check my portfolio first and if my style doesn't fit your ideas, I'd be happy to suggest another artist.
+            There are many great artists in Whistler. Please check my portfolio first and if my style doesn{'\u0027'}t fit your ideas, I{'\u0027'}d be happy to suggest another artist.
             </p>
             <br />
             <p className={bodyStyles.boldtext}>
