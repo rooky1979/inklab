@@ -5,6 +5,7 @@ In mobile:
 Landing page - 
 Video not playing
 Five Stars not getting picked up
+google image all over the place
 
 Dashboard - 
 All font is in times new roman
