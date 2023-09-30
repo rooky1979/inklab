@@ -14,7 +14,7 @@ const FaqsBody = ({backgroundImage}) => {
   }
   return (
     <>
-      <div className={bodyStyles.mainpage} style={mainpageStyle}>
+      <div className={bodyStyles.mainpage} /* style={mainpageStyle} */>
         <motion.div 
         initial="hidden"
         animate="visible"

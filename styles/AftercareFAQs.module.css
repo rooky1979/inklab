@@ -7,7 +7,6 @@
   background-image: url("/tattoosign.jpg");
   background-size: cover;
   background-attachment: fixed;
-  background-position: center;
 }
 .maincontact {
   background-image: url("/aftercare.png");
@@ -18,8 +17,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-   background-size: cover;
-   background-attachment: fixed;
+/*    background-size: cover;
+   background-attachment: fixed; */
    border: none;
 }
 .container {
