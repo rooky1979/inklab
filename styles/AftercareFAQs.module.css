@@ -22,6 +22,8 @@
    border: none;
 }
 .container {
+  background-size: cover;
+   background-attachment: fixed;
     display: flex;
     height: 150px;
     width: 100%;
