@@ -97,15 +97,31 @@
     .grid {
         grid-template-columns: repeat(3, minmax(0, 1fr));
     }
+    .boldtext {
+      font-family: "Roboto";
+    }  
+    .tiletext {
+      font-family: "Roboto";
+    }
 }
 @media (min-width: 275px) and (max-width: 767px) {
     .grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
+    .boldtext {
+      font-family: "Roboto";
+    }  
+    .tiletext {
+      font-family: "Roboto";
+    }
 }
 @media (min-width: 275px) and (max-width: 530px) {
   .boldtext {
     font-size: 40px;
+    font-family: "Roboto";
+  }
+  .tiletext {
+    font-family: "Roboto";
   }
     .grid {
         grid-template-columns: repeat(1, minmax(0, 1fr));
