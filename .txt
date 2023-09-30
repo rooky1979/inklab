@@ -1,3 +1,46 @@
-todo
+Fixes
 
-page animations
+In mobile:
+
+Landing page - 
+Video not playing
+Five Stars not getting picked up
+
+Dashboard - 
+All font is in times new roman
+
+Bio - 
+All font in time new roman inc. navbar
+
+Portfolio - Everything is fine inc. Navbar
+
+Available art - Everything is fine inc. Navbar
+
+Blog - Everything in times new roman inc. Navbar
+
+Contact - Everything in times new roman inc. Navbar
+
+Secret club - Everything in times new roman inc. Navbar
+
+Aftercare - Everything in times new roman inc. Navbar
+
+FAQS - Everything in times new roman inc. Navbar
+Background pic is pixelated. Need a higher res pic
+
+In desktop:
+
+Landing page - 
+Five Stars not getting picked up
+
+Bio - 
+Body font in time new roman NOT header
+
+Blog - Header okay. Everything else in times new roman
+
+Contact - Header okay. Everything else in times new roman
+
+Secret club - Header okay. Everything else in times new roman
+
+Aftercare - Header okay. Everything else in times new roman
+
+FAQS - Header okay. Everything else in times new roman
