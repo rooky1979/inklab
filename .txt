@@ -2,43 +2,4 @@ Fixes
 
 In mobile:
 
-Landing page - 
-Video not playing
-
-Dashboard - 
-All font is in times new roman
-
-Bio - 
-Bkg pic not fixed
-
-Portfolio - Bkg pic not fixed
-
-Available art - Bkg pic not fixed
-
-Blog - Bkg pic not fixed
-
-Contact - Bkg pic not fixed
-
-Secret club - Bkg pic not fixed
-
-Aftercare - Bkg pic not fixed
-
-FAQS - Bkg pic not fixed
-
-In desktop:
-
-Landing page - 
-Five Stars not getting picked up
-
-Bio - 
-Body font in time new roman NOT header
-
-Blog - Header okay. Everything else in times new roman
-
-Contact - Header okay. Everything else in times new roman
-
-Secret club - Header okay. Everything else in times new roman
-
-Aftercare - Header okay. Everything else in times new roman
-
-FAQS - Header okay. Everything else in times new roman
+Images on pages aren't sticky and zoomed in too much
