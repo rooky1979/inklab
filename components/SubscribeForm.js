@@ -21,7 +21,11 @@ const SubscribeForm = ({ backgroundImage }) => {
   const { register, handleSubmit, reset } = useForm();
 
   const onSubmit = async (data) => {
-    try {
+
+    setIsDialogSuccess(true);
+    setDialogMessage("Thank you for subscribing!");
+    setShowDialog(true);
+    /* try {
       // Send the email to Mailchimp
       const response = await fetch("/api/subscribe", {
         method: "POST",
@@ -45,7 +49,7 @@ const SubscribeForm = ({ backgroundImage }) => {
       }
     } catch (error) {
       console.error("Error:", error);
-    }
+    } */
   };
   return (
     <div className={formStyles.mainpage} style={mainpageStyle}>
