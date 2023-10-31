@@ -6,7 +6,7 @@
 /* BioHeader Component */
 .main {
    background-image: url("/biobkg.jpg");
-   background-size: 100% auto;
+   background-size: cover;
    background-attachment: fixed;
 
 }
@@ -16,8 +16,8 @@
     align-items: center;
    /*  background-color: transparent /* rgb(113, 118, 117) */;
    /* background-image: url("/biobkg.jpg"); */
-   background-size: cover;
-   background-attachment: fixed;
+/*    background-size: cover;
+   background-attachment: fixed; */
    border: none;
 }
 .topcontainer {
